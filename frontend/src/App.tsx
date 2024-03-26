@@ -10,8 +10,8 @@ import {
 
 export default function App() {
   return (
-    <main>
-      <section>
+    <main  className='relative'>
+      <section className="">
         <Hero />
       </section>
       <section>
