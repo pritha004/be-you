@@ -16,14 +16,14 @@ const Nav = () => {
       <nav className="flex justify-between items-center max-container">
         <a href="/" className="flex justify-center items-center ">
           <CiWheat size={40} />
-          <p>Be U</p>
+          <p className="font-palanquin">BE U</p>
         </a>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
                 href="item.href"
-                className="font-montserrat leading-normal text-lg"
+                className="font-sans leading-normal text-lg"
               >
                 {item.label}
               </a>
@@ -37,7 +37,7 @@ const Nav = () => {
                 <li key={item.label}>
                   <a
                     href="item.href"
-                    className="font-montserrat leading-normal text-lg"
+                    className="font-sans leading-normal text-lg"
                   >
                     {item.label}
                   </a>
