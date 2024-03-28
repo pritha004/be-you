@@ -1,6 +1,10 @@
+import { NewLaunchCard } from "../components"
+
 const NewLaunches = () => {
   return (
-    <div>NewLaunches</div>
+    <div>NewLaunches
+      <NewLaunchCard/>
+    </div>
   )
 }
 
