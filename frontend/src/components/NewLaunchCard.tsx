@@ -1,25 +1,32 @@
-const NewLaunchCard = () => {
-    return (
-        <div className="w-[300px] rounded-md border">
-        <img
-          src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-          alt="Laptop"
-          className="h-[200px] w-full rounded-md object-cover"
-        />
-        <div className="p-4">
-          <h1 className="text-lg font-semibold">About Macbook</h1>
-          <p className="mt-3 text-sm text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-          </p>
-          <button
-            type="button"
-            className="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-          >
-            Read
-          </button>
-        </div>
+import { FaStar } from "react-icons/fa";
+
+const NewLaunchCard = ({ imgURL, name, price, rating, reviewsNum }) => {
+  return (
+    <div className="flex flex-1 flex-col w-full rounded-md border max-sm:w-full shadow-lg">
+      <img
+        src={imgURL}
+        alt={name}
+        className="h-[200px] w-full rounded-md object-cover"
+      />
+      <div className="mt-8 flex justify-center gap-2.5">
+        <p className="font-montserrat leading-normal">
+          <span className="flex justify-center items-center gap-1">
+            <FaStar className="text-chocolate-brown" />
+            <span>{rating}</span>
+            <span className="text-sm text-slate-500">({reviewsNum} reviews)</span>
+          </span>
+        </p>
       </div>
-    )
-  }
-  
-  export default NewLaunchCard;
+      <div className="flex flex-col justify-center mt-2">
+        <h3 className="m-1 text-md text-center leading-normal font-semibold font-palanquin">
+          {name}
+        </h3>
+        <p className="m-1 text-center font-montserrat leading-normal">
+          {price}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default NewLaunchCard;

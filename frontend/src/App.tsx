@@ -17,7 +17,7 @@ export default function App() {
       <section className="">
         <Hero />
       </section>
-      <section>
+      <section className="sm:px-16 px-8 sm:py-24 py-12">
         <NewLaunches />
       </section>
       <section>

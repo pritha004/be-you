@@ -6,3 +6,38 @@ export const navLinks = [
     { href: "#makeup", label: "Makeup" },
     { href: "#contact", label: "Contact" },
 ];
+
+export const newLaunchProducts = [
+    {
+        imgURL: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2tpbmNhcmUlMjBhbmQlMjBtYWtldXAlMjBwcm9kdWN0c3xlbnwwfDB8MHx8fDI%3D",
+        name: "COCOOIL Organic Coconut Body Oil",
+        desc:"",
+        price: "$14.99",
+        rating:3.9,
+        reviewsNum:1009
+    },
+    {
+        imgURL: "https://images.unsplash.com/photo-1591375372226-3531cf2eb6d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
+        name: "Givenchy Irresistible Eau De Parfum",
+        desc:"",
+        price: "$75.78",
+        rating:4.5,
+        reviewsNum:1009
+    },
+    {
+        imgURL: "https://images.unsplash.com/photo-1611080541599-8c6dbde6ed28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
+        name: "Laneige Lip Sleeping Mask - Sweet Candy",
+        desc:"",
+        price: "$19.00",
+        rating:4.3,
+        reviewsNum:5000
+    },
+    {
+        imgURL: "https://images.unsplash.com/photo-1564512480295-86e479d9b87c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
+        name: "Jade Facial Roller for Face, Neck and Body Muscle",
+        desc:"",
+        price: "$80.20",
+        rating:4.1,
+        reviewsNum:2109
+    },
+];
