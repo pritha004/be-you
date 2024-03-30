@@ -3,7 +3,7 @@ import { newLaunchProducts } from "../constants";
 
 const NewLaunches = () => {
   return (
-    <section id="newProducts" className="">
+    <section id="newProducts" className="max-container">
     <div className="flex flex-col justify-center gap-5 mb-4">
       <h2 className="text-4xl font-bold font-palanquin"> <span className="text-skin">New</span> Launches</h2>
     </div>
