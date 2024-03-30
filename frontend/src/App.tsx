@@ -1,7 +1,7 @@
 import {
   Hero,
   NewLaunches,
-  UpgradeRoutine,
+  ShopByConcern,
   ProjectNature,
   OurValues,
   Feedback,
@@ -20,8 +20,8 @@ export default function App() {
       <section className="sm:px-16 px-8 sm:py-24 py-12">
         <NewLaunches />
       </section>
-      <section>
-        <UpgradeRoutine />
+      <section className=" bg-pale-skin/30 sm:px-16 px-8 sm:py-8 py-12">
+        <ShopByConcern />
       </section>
       <section>
         <ProjectNature />

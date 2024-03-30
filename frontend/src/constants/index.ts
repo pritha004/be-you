@@ -41,3 +41,22 @@ export const newLaunchProducts = [
         reviewsNum:2109
     },
 ];
+
+export const shopByConcernCategories=[
+    {
+        imgURL: "https://images.unsplash.com/photo-1500522144261-ea64433bbe27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYxfHxwb3J0cmFpdHxlbnwwfDB8MHx8fDI%3D",
+        name: "Ageing",
+    },
+    {
+        imgURL: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlJTIwaW1hZ2VzfGVufDB8MHwwfHx8Mg%3D%3D",
+        name: "Acne & Oily skin",
+    },
+    {
+        imgURL: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHdvbWFufGVufDB8MHwwfHx8Mg%3D%3D",
+        name: "Hairfall",
+    },
+    {
+        imgURL: "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHBvcnRyYWl0fGVufDB8MHwwfHx8MA%3D%3D",
+        name: "Pigmentation",
+    },
+]
