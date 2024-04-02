@@ -60,3 +60,5 @@ export const shopByConcernCategories=[
         name: "Pigmentation",
     },
 ]
+
+export const projectNature="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRyZWV8ZW58MHwwfDB8fHwy";

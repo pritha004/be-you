@@ -9,12 +9,7 @@ const ShopByConcern = () => {
           Shop By <span className="text-chocolate-brown">Concern</span>
         </h2>
       </div>
-      {/* <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
-        {shopByConcernCategories.map((category) => (
-          <ShopByConcernCategoryCard key={category.name} {...category} />
-        ))}
-      </div> */}
-      <div className="overflow-x-auto sm:overflow-x-hidden">
+      <div className="">
         <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-4">
           {shopByConcernCategories.map((category) => (
             <ShopByConcernCategoryCard key={category.name} {...category} />
