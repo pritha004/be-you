@@ -4,21 +4,67 @@ import { FaBottleDroplet } from "react-icons/fa6";
 
 const OurValues = () => {
   return (
-    <div>
-      OurValues 
-      Transparency
-      <BsTransparency />
-      No hidden ingredients, no opacity. Full disclosure of ingredients used &
-      their concentration
-      
-      Efficacy
-      <GiTransparentTubes />
-      Each product is launched on back of proven science only 
-      
-      Affordable
-      <FaBottleDroplet />
-      Skincare, accessible to all
-    </div>
+    <section id="ourValues" className="max-container">
+      <div className="flex flex-col text-center">
+        <h2 className="text-4xl font-bold font-palanquin mb-4">
+          Our <span className="text-skin">Values</span>
+        </h2>
+      </div>
+
+      <div className="mt-4">
+        <div className="grid justify-around md:grid-cols-3 sm:grid-cols-1 gap-x-10">
+          <div className="flex flex-1 flex-col w-full max-sm:w-full">
+            <div className="flex justify-center">
+              <BsTransparency fontSize={50} />
+            </div>
+            <div className="flex justify-center">
+              <h3 className="m-1 text-xl text-center text-chocolate-brown leading-normal font-bold font-palanquin">
+                Transparency
+              </h3>
+            </div>
+            <div className="flex justify-center">
+              <p className="text-center">
+                No hidden ingredients, no opacity. Full disclosure of
+                ingredients used & their concentration.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-1 flex-col w-full max-sm:w-full">
+            <div className="flex justify-center">
+              <GiTransparentTubes fontSize={50} />
+            </div>
+            <div className="flex justify-center">
+              <h3 className="m-1 text-xl text-center text-chocolate-brown  leading-normal font-bold font-palanquin">
+                Efficacy
+              </h3>
+            </div>
+            <div className="flex justify-center">
+              <p className="text-center">
+                Each product is launched on back of proven science only.       
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-1 flex-col w-full max-sm:w-full">
+            <div className="flex justify-center">
+              <FaBottleDroplet fontSize={50} />
+            </div>
+            <div className="flex justify-center">
+              <h3 className="m-1 text-xl text-center text-chocolate-brown  leading-normal font-bold font-palanquin">
+                Affordable
+              </h3>
+            </div>
+            <div className="flex justify-center">
+              <p className="text-center">
+                Skincare, providing affordable, quality products and skin health
+                education for everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

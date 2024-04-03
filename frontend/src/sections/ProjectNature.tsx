@@ -2,7 +2,7 @@ import { projectNature } from "../constants";
 
 const ProjectNature = () => {
   return (
-    <section id="newProducts" className="max-container">
+    <section id="projectNature" className="max-container">
       <div className="flex justify-center gap-5 mb-4">
         <div className="flex flex-col text-center">
           <h2 className="text-4xl font-bold font-palanquin">
@@ -18,7 +18,7 @@ const ProjectNature = () => {
         </div>
       </div>
       <div className="flex justify-center ">
-        <div className="rounded-lg shadow-lg shadow-chocolate-brown">
+        <div className="h-[40%] w-[50%] rounded-lg shadow-lg shadow-chocolate-brown">
           <img
             src={projectNature}
             alt="trees"
