@@ -12,7 +12,7 @@ const OurValues = () => {
       </div>
 
       <div className="mt-4">
-        <div className="grid justify-around md:grid-cols-3 sm:grid-cols-1 gap-x-10">
+        <div className="grid justify-around md:grid-cols-3 sm:grid-cols-1 gap-10">
           <div className="flex flex-1 flex-col w-full max-sm:w-full">
             <div className="flex justify-center">
               <BsTransparency fontSize={50} />
