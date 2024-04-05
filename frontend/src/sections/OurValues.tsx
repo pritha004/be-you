@@ -5,8 +5,8 @@ import { FaBottleDroplet } from "react-icons/fa6";
 const OurValues = () => {
   return (
     <section id="ourValues" className="max-container">
-      <div className="flex flex-col text-center">
-        <h2 className="text-4xl font-bold font-palanquin mb-4">
+      <div className="flex flex-col">
+        <h2 className="text-4xl font-bold font-palanquin mb-6">
           Our <span className="text-skin">Values</span>
         </h2>
       </div>
