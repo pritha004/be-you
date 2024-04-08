@@ -62,3 +62,18 @@ export const shopByConcernCategories=[
 ]
 
 export const projectNature="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRyZWV8ZW58MHwwfDB8fHwy";
+
+export const reviews = [
+    {
+        imgURL: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhaXR8ZW58MHwwfDB8fHwy",
+        customerName: 'Morich Brown',
+        rating: 3.8,
+        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+    },
+    {
+        imgURL: "https://images.unsplash.com/photo-1513673054901-2b5f51551112?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        customerName: 'Emily Monges',
+        rating: 4.5,
+        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+    }
+];

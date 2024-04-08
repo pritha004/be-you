@@ -29,7 +29,7 @@ export default function App() {
       <section className="sm:px-16 px-8 sm:pt-4 sm:pb-24 py-12">
         <OurValues />
       </section>
-      <section>
+      <section className="sm:px-16 px-8 sm:pt-4 sm:pb-24 py-12">
         <Feedback />
       </section>
       <section>
