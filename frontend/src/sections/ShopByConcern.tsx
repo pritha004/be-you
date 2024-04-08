@@ -1,4 +1,4 @@
-import ShopByConcernCategoryCard from "../components/ShopByConcernCategoryCard";
+import {ShopByConcernCategoryCard} from "../components";
 import { shopByConcernCategories } from "../constants";
 
 const ShopByConcern = () => {

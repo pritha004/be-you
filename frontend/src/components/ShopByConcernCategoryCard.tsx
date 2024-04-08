@@ -1,4 +1,9 @@
-const ShopByConcernCategoryCard = ({ imgURL, name }) => {
+interface Props {
+  imgURL: string;
+  name: string;
+}
+
+const ShopByConcernCategoryCard = ({ imgURL, name }:Props) => {
   return (
     <div className="flex flex-1 flex-col w-full rounded-md max-sm:w-full">
       <div className="flex justify-center mt-2">
