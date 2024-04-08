@@ -31,7 +31,7 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }: Props) => {
               <div key={i}>
                 <FaStar 
                   className="star"
-                  color={ratingValue <= rating ? "#D5B4B4" : "#e4e5e9"}
+                  color={ratingValue <= rating ? "#867070" : "#e4e5e9"}
                   size={20}
                 />
               </div>

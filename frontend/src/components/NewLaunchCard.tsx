@@ -1,6 +1,14 @@
 import { FaStar } from "react-icons/fa";
 
-const NewLaunchCard = ({ imgURL, name, price, rating, reviewsNum }) => {
+interface Props {
+  imgURL: string;
+  name: string;
+  price: string;
+  rating: string;
+  reviewsNum: string;
+}
+
+const NewLaunchCard = ({ imgURL, name, price, rating, reviewsNum }:Props) => {
   return (
     <div className="flex flex-1 flex-col w-full rounded-md border max-sm:w-full shadow-lg">
       <img
