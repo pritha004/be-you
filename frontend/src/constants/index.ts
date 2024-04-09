@@ -170,3 +170,551 @@ export const minimalMakeupProducts = [
     reviewsNum: 7109,
   },
 ];
+
+export const allProducts = [
+  {
+    id: 1,
+    imgURL:
+      "https://images.unsplash.com/photo-1575249142951-35b95b9bb5b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Serum",
+  },
+
+  {
+    id: 2,
+    imgURL:
+      "https://images.unsplash.com/photo-1626783416763-67a92e5e7266?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Mask",
+  },
+
+  {
+    id: 3,
+    imgURL:
+      "https://images.unsplash.com/photo-1556228721-e65f06ab45c8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHNraW5jYXJlJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Cleanser",
+  },
+
+  {
+    id: 4,
+    imgURL:
+      "https://images.unsplash.com/photo-1611080541626-4ecc5ead618d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "LipCare",
+  },
+
+  {
+    id: 5,
+    imgURL:
+      "https://images.unsplash.com/photo-1629732047847-50219e9c5aef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Moisturizer",
+  },
+
+  {
+    id: 6,
+    imgURL:
+      "https://images.unsplash.com/photo-1612817288765-6d2b644c762e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Serum",
+  },
+
+  {
+    id: 7,
+    imgURL:
+      "https://images.unsplash.com/photo-1643836361449-90d35fd14f1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Cleanser",
+  },
+
+  {
+    id: 8,
+    imgURL:
+      "https://images.unsplash.com/photo-1561383615-1f7c3646eedf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Cleanser",
+  },
+
+  {
+    id: 9,
+    imgURL:
+      "https://images.unsplash.com/photo-1629732047822-21d2237fe63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "EyeCare",
+  },
+
+  {
+    id: 10,
+    imgURL:
+      "https://images.unsplash.com/photo-1667242003558-e42942d2b911?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Moisturizer",
+  },
+
+  {
+    id: 11,
+    imgURL:
+      "https://images.unsplash.com/photo-1569600187472-a0d8b8cf606a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Mask",
+  },
+
+  {
+    id: 12,
+    imgURL:
+      "https://images.unsplash.com/photo-1562158438-16cec9c3c002?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "EyeCare",
+  },
+
+  {
+    id: 13,
+    imgURL:
+      "https://images.unsplash.com/photo-1631390573012-21806f8ff5bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Serum",
+  },
+
+  {
+    id: 14,
+    imgURL:
+      "https://images.unsplash.com/photo-1643836361449-90d35fd14f1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Skin",
+    SubCategory: "Serum",
+  },
+
+  {
+    id: 15,
+    imgURL:
+      "https://images.unsplash.com/photo-1631214524115-9942bf927d4a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Lips",
+  },
+
+  {
+    id: 16,
+    imgURL:
+      "https://images.unsplash.com/photo-1631214540553-ff044a3ff1d4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Eyes",
+  },
+
+  {
+    id: 17,
+    imgURL:
+      "https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Eyes",
+  },
+
+  {
+    id: 18,
+    imgURL:
+      "https://images.unsplash.com/photo-1631214504157-ee93581cefde?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Tools",
+  },
+
+  {
+    id: 19,
+    imgURL:
+      "https://images.unsplash.com/photo-1631214498986-c4187a007fd5?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Tools",
+  },
+
+  {
+    id: 20,
+    imgURL:
+      "https://images.unsplash.com/photo-1503236823255-94609f598e71?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Eyes",
+  },
+
+  {
+    id: 21,
+    imgURL:
+      "https://images.unsplash.com/photo-1631120234265-83988f58b8af?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Tools",
+  },
+
+  {
+    id: 22,
+    imgURL:
+      "https://images.unsplash.com/photo-1575686717697-f43bd36e74c2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Face",
+  },
+
+  {
+    id: 23,
+    imgURL:
+      "https://images.unsplash.com/photo-1625093525885-282384697917?q=80&w=801&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Eyes",
+  },
+
+  {
+    id: 24,
+    imgURL:
+      "https://images.unsplash.com/photo-1531646317777-0619c7c5d1d3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Face",
+  },
+
+  {
+    id: 25,
+    imgURL:
+      "https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=806&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Face",
+  },
+
+  {
+    id: 26,
+    imgURL:
+      "https://images.unsplash.com/photo-1631214524049-0ebbbe6d81aa?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Lips",
+  },
+
+  {
+    id: 27,
+    imgURL:
+      "https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?q=80&w=889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Lips",
+  },
+
+  {
+    id: 28,
+    imgURL:
+      "https://images.unsplash.com/photo-1590156423742-3c58d6b9d605?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Face",
+  },
+
+  {
+    id: 29,
+    imgURL:
+      "https://images.unsplash.com/photo-1599733589296-1a181e38769b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Lips",
+  },
+
+  {
+    id: 30,
+    imgURL:
+      "https://images.unsplash.com/photo-1521837670401-2bd439d49e6d?q=80&w=970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Lips",
+  },
+
+  {
+    id: 31,
+    imgURL:
+      "https://images.unsplash.com/photo-1534875833255-a18d5467e893?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Makeup",
+    SubCategory: "Tools",
+  },
+
+  {
+    id: 32,
+    imgURL:
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Oil",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Hair",
+    SubCategory: "",
+  },
+
+  {
+    id: 33,
+    imgURL:
+      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=1053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Hair Mask",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Hair",
+    SubCategory: "",
+  },
+
+  {
+    id: 34,
+    imgURL:
+      "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Hair Shampoo",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Hair",
+    SubCategory: "",
+  },
+
+  {
+    id: 35,
+    imgURL:
+      "https://images.unsplash.com/photo-1620331309205-b5a4669ac526?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Hair Dryer",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Hair",
+    SubCategory: "",
+  },
+
+  {
+    id: 36,
+    imgURL:
+      "https://images.unsplash.com/photo-1620331310411-6c0819176107?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Hair Straightner",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Hair",
+    SubCategory: "",
+  },
+
+  {
+    id: 37,
+    imgURL:
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Hair Shampoo",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Hair",
+    SubCategory: "",
+  },
+
+  {
+    id: 38,
+    imgURL:
+      "https://images.unsplash.com/photo-1621277906553-047eaaef4400?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Conditioner",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "Hair",
+    SubCategory: "",
+  },
+
+  {
+    id: 39,
+    imgURL:
+      "https://images.unsplash.com/photo-1613731587985-ea81ea4b3bdc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Wipes",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "BabyCare",
+    SubCategory: "",
+  },
+
+  {
+    id: 40,
+    imgURL:
+      "https://images.unsplash.com/photo-1537673156864-5d2c72de7824?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Oil",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "BabyCare",
+    SubCategory: "",
+  },
+
+  {
+    id: 41,
+    imgURL:
+      "https://images.unsplash.com/photo-1630398777700-afb6d24a502d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Cream",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "BabyCare",
+    SubCategory: "",
+  },
+
+  {
+    id: 42,
+    imgURL:
+      "https://images.unsplash.com/photo-1605040056130-38d9faad3534?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "oil",
+    desc: "",
+    price: "",
+    rating: 0,
+    reviewsNum: 0,
+    category: "BabyCare",
+    SubCategory: "",
+  },
+];
