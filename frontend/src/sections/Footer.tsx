@@ -10,7 +10,7 @@ const Footer = () => {
             <CiWheat size={40} />
           </a>
           <p className="mt-4 text-base text-justify leading-7 font-montserrat sm:max-w-sm">
-            "Discover the secret to enhancing your natural beauty with our
+            Discover the secret to enhancing your natural beauty with our
             minimal skincare and makeup collection. Our products are carefully
             curated to accentuate your unique features, allowing your true
             radiance to shine through effortlessly.

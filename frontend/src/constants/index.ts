@@ -16,7 +16,7 @@ export const newLaunchProducts = [
   {
     imgURL:
       "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2tpbmNhcmUlMjBhbmQlMjBtYWtldXAlMjBwcm9kdWN0c3xlbnwwfDB8MHx8fDI%3D",
-    name: "COCOOIL Organic Coconut Body Oil",
+    name: "Organic Coconut Body Oil",
     desc: "",
     price: "$14.99",
     rating: 3.9,
@@ -25,7 +25,7 @@ export const newLaunchProducts = [
   {
     imgURL:
       "https://images.unsplash.com/photo-1591375372226-3531cf2eb6d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
-    name: "Givenchy Irresistible Eau De Parfum",
+    name: "Irresistible Eau De Parfum",
     desc: "",
     price: "$75.78",
     rating: 4.5,
@@ -34,7 +34,7 @@ export const newLaunchProducts = [
   {
     imgURL:
       "https://images.unsplash.com/photo-1611080541599-8c6dbde6ed28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
-    name: "Laneige Lip Sleeping Mask - Sweet Candy",
+    name: "Lip Sleeping Mask - Sweet Candy",
     desc: "",
     price: "$19.00",
     rating: 4.3,
@@ -136,7 +136,7 @@ export const minimalMakeupProducts = [
   {
     imgURL:
       "https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?q=80&w=1789&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Love Earth Creamy Matte Lipstick",
+    name: "Creamy Matte Lipstick",
     desc: "",
     price: "$34.99",
     rating: 4.3,
@@ -163,7 +163,7 @@ export const minimalMakeupProducts = [
   {
     imgURL:
       "https://images.unsplash.com/photo-1625094640367-05f84293fe42?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "MARS Bling it on Glitter Pallete",
+    name: "Bling it on Glitter Pallete",
     desc: "",
     price: "$30.20",
     rating: 3.9,
