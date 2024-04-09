@@ -84,7 +84,7 @@ export const reviews = [
     customerName: "Morich Brown",
     rating: 3.8,
     feedback:
-      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+      "The attention to formula and the quality of the product exceeded my expectations. Highly recommended!",
   },
   {
     imgURL:
@@ -130,4 +130,43 @@ export const socialMedia = [
   { logo: FaSquareFacebook, alt: "facebook logo" },
   { logo: FaXTwitter, alt: "twitter logo" },
   { logo: AiFillInstagram, alt: "instagram logo" },
+];
+
+export const minimalMakeupProducts = [
+  {
+    imgURL:
+      "https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?q=80&w=1789&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Love Earth Creamy Matte Lipstick",
+    desc: "",
+    price: "$34.99",
+    rating: 4.3,
+    reviewsNum: 5000,
+  },
+  {
+    imgURL:
+      "https://images.unsplash.com/photo-1625093525885-282384697917?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1ha2V1cHxlbnwwfDB8MHx8fDI%3D",
+    name: "Eyes On Me ! 4 in 1 Quad Eyeshadow Pallete",
+    desc: "",
+    price: "$25.50",
+    rating: 3.4,
+    reviewsNum: 1105,
+  },
+  {
+    imgURL:
+      "https://images.unsplash.com/photo-1631120234265-83988f58b8af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Beauty Blender Sponge",
+    desc: "",
+    price: "$6.00",
+    rating: 4.3,
+    reviewsNum: 300,
+  },
+  {
+    imgURL:
+      "https://images.unsplash.com/photo-1625094640367-05f84293fe42?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "MARS Bling it on Glitter Pallete",
+    desc: "",
+    price: "$30.20",
+    rating: 3.9,
+    reviewsNum: 7109,
+  },
 ];

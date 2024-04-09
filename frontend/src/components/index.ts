@@ -1,12 +1,12 @@
 import Nav from "./Nav";
-import NewLaunchCard from "./NewLaunchCard";
+import ProductCard from "./ProductCard";
 import Button from "./Button";
 import ReviewCard from "./ReviewCard";
 import ShopByConcernCategoryCard from "./ShopByConcernCategoryCard";
 
 export {
     Nav,
-    NewLaunchCard,
+    ProductCard,
     Button,
     ReviewCard,
     ShopByConcernCategoryCard

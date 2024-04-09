@@ -7,7 +7,7 @@ const OurValues = () => {
     <section id="ourValues" className="max-container">
       <div className="flex flex-col">
         <h2 className="text-4xl text-center font-bold font-palanquin mb-6">
-          Our <span className="text-skin">Values</span>
+          Our <span className="text-chocolate-brown">Values</span>
         </h2>
       </div>
 

@@ -4,11 +4,11 @@ interface Props {
   imgURL: string;
   name: string;
   price: string;
-  rating: string;
-  reviewsNum: string;
+  rating: number;
+  reviewsNum: number;
 }
 
-const NewLaunchCard = ({ imgURL, name, price, rating, reviewsNum }:Props) => {
+const ProductCard = ({ imgURL, name, price, rating, reviewsNum }:Props) => {
   return (
     <div className="flex flex-1 flex-col w-full rounded-md border max-sm:w-full shadow-lg">
       <img
@@ -37,4 +37,4 @@ const NewLaunchCard = ({ imgURL, name, price, rating, reviewsNum }:Props) => {
   );
 };
 
-export default NewLaunchCard;
+export default ProductCard;
