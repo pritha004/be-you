@@ -1,14 +1,15 @@
 import { CiWheat } from "react-icons/ci";
 import { socialMedia, footerLinks } from "../constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="max-container">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
-          <a href="/" className="flex justify-center items-center ">
+          <Link to="/" className="flex justify-center items-center ">
             <CiWheat size={40} />
-          </a>
+          </Link>
           <p className="mt-4 text-base text-justify leading-7 font-montserrat sm:max-w-sm">
             Discover the secret to enhancing your natural beauty with our
             minimal skincare and makeup collection. Our products are carefully
@@ -39,7 +40,7 @@ const Footer = () => {
                     className="mt-3 font-montserrat text-base leading-normal hover:text-pale-skin"
                     key={link.name}
                   >
-                    <a href={link.link}>{link.name}</a>
+                    <Link to={link.link}>{link.name}</Link>
                   </li>
                 ))}
               </ul>

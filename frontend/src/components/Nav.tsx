@@ -3,6 +3,7 @@ import { navLinks } from "../constants";
 import { CiWheat } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,19 +15,16 @@ const Nav = () => {
   return (
     <header className="px-4 py-6 z-10 w-full text-white bg-black/50 fixed">
       <nav className="flex justify-between items-center max-container">
-        <a href="/" className="flex justify-center items-center ">
+        <Link to="/" className="flex justify-center items-center ">
           <CiWheat size={40} />
           <p className="font-palanquin">BE U</p>
-        </a>
+        </Link>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
-              <a
-                href="item.href"
-                className="font-sans leading-normal text-lg"
-              >
+              <Link to={item.href} className="font-sans leading-normal text-lg">
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -35,18 +33,21 @@ const Nav = () => {
             <ul className="flex flex-col gap-y-2 px-2 text-right">
               {navLinks.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href="item.href"
+                  <Link to={item.href}
                     className="font-sans leading-normal text-lg"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           )}
 
-          {isOpen?<RxCross2 className="mt-1" onClick={handleMenu}/>:<GiHamburgerMenu onClick={handleMenu} />}
+          {isOpen ? (
+            <RxCross2 className="mt-1" onClick={handleMenu} />
+          ) : (
+            <GiHamburgerMenu onClick={handleMenu} />
+          )}
         </div>
       </nav>
     </header>
