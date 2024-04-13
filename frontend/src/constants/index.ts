@@ -14,6 +14,7 @@ export const navLinks = [
 
 export const newLaunchProducts = [
   {
+    id: 1,
     imgURL:
       "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2tpbmNhcmUlMjBhbmQlMjBtYWtldXAlMjBwcm9kdWN0c3xlbnwwfDB8MHx8fDI%3D",
     name: "Organic Coconut Body Oil",
@@ -21,8 +22,11 @@ export const newLaunchProducts = [
     price: 14.99,
     rating: 3.9,
     reviewsNum: 1009,
+    category: "Skin",
+    SubCategory: "Body",
   },
   {
+    id: 2,
     imgURL:
       "https://images.unsplash.com/photo-1591375372226-3531cf2eb6d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
     name: "Irresistible Eau De Parfum",
@@ -30,24 +34,32 @@ export const newLaunchProducts = [
     price: 75.78,
     rating: 4.5,
     reviewsNum: 1009,
+    category: "Skin",
+    SubCategory: "Body",
   },
   {
+    id: 3,
     imgURL:
       "https://images.unsplash.com/photo-1611080541599-8c6dbde6ed28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
     name: "Lip Sleeping Mask - Sweet Candy",
     desc: "",
-    price: 19.00,
+    price: 19.0,
     rating: 4.3,
     reviewsNum: 5000,
+    category: "Skin",
+    SubCategory: "Lips",
   },
   {
+    id: 4,
     imgURL:
       "https://images.unsplash.com/photo-1564512480295-86e479d9b87c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
     name: "Jade Facial Roller for Face, Neck and Body Muscle",
     desc: "",
-    price: 80.20,
+    price: 80.2,
     rating: 4.1,
     reviewsNum: 2109,
+    category: "Skin",
+    SubCategory: "tools",
   },
 ];
 
@@ -134,6 +146,7 @@ export const socialMedia = [
 
 export const minimalMakeupProducts = [
   {
+    id: 1,
     imgURL:
       "https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?q=80&w=1789&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Creamy Matte Lipstick",
@@ -141,33 +154,44 @@ export const minimalMakeupProducts = [
     price: 34.99,
     rating: 4.3,
     reviewsNum: 5000,
+    category: "Makeup",
+    SubCategory: "Lips",
   },
   {
+    id: 2,
     imgURL:
       "https://images.unsplash.com/photo-1625093525885-282384697917?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1ha2V1cHxlbnwwfDB8MHx8fDI%3D",
     name: "Eyes On Me ! 4 in 1 Quad Eyeshadow Pallete",
     desc: "",
-    price: 25.50,
+    price: 25.5,
     rating: 3.4,
     reviewsNum: 1105,
+    category: "Makeup",
+    SubCategory: "Eye",
   },
   {
+    id: 3,
     imgURL:
       "https://images.unsplash.com/photo-1631120234265-83988f58b8af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Beauty Blender Sponge",
     desc: "",
-    price: 6.00,
+    price: 6.0,
     rating: 4.3,
     reviewsNum: 300,
+    category: "Makeup",
+    SubCategory: "Tools",
   },
   {
+    id: 4,
     imgURL:
       "https://images.unsplash.com/photo-1625094640367-05f84293fe42?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Bling it on Glitter Pallete",
     desc: "",
-    price: 30.20,
+    price: 30.2,
     rating: 3.9,
     reviewsNum: 7109,
+    category: "Makeup",
+    SubCategory: "Eye",
   },
 ];
 
