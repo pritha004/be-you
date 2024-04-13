@@ -1,14 +1,7 @@
 import { FaStar } from "react-icons/fa";
+import { Product } from "../models/Product";
 
-interface Props {
-  imgURL: string;
-  name: string;
-  price: string;
-  rating: number;
-  reviewsNum: number;
-}
-
-const ProductCard = ({ imgURL, name, price, rating, reviewsNum }:Props) => {
+const ProductCard = ({ imgURL, name, price, rating, reviewsNum }:Product) => {
   return (
     <div className="flex flex-1 flex-col w-full rounded-md border max-sm:w-full shadow-lg">
       <img
