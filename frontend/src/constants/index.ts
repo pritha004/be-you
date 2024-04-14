@@ -22,7 +22,7 @@ export const newLaunchProducts = [
     price: 14.99,
     rating: 3.9,
     reviewsNum: 1009,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Body",
   },
   {
@@ -34,7 +34,7 @@ export const newLaunchProducts = [
     price: 75.78,
     rating: 4.5,
     reviewsNum: 1009,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Body",
   },
   {
@@ -46,7 +46,7 @@ export const newLaunchProducts = [
     price: 19.0,
     rating: 4.3,
     reviewsNum: 5000,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Lips",
   },
   {
@@ -58,7 +58,7 @@ export const newLaunchProducts = [
     price: 80.2,
     rating: 4.1,
     reviewsNum: 2109,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "tools",
   },
 ];
@@ -154,7 +154,7 @@ export const minimalMakeupProducts = [
     price: 34.99,
     rating: 4.3,
     reviewsNum: 5000,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Lips",
   },
   {
@@ -166,7 +166,7 @@ export const minimalMakeupProducts = [
     price: 25.5,
     rating: 3.4,
     reviewsNum: 1105,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Eye",
   },
   {
@@ -178,7 +178,7 @@ export const minimalMakeupProducts = [
     price: 6.0,
     rating: 4.3,
     reviewsNum: 300,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Tools",
   },
   {
@@ -190,7 +190,7 @@ export const minimalMakeupProducts = [
     price: 30.2,
     rating: 3.9,
     reviewsNum: 7109,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Eye",
   },
 ];
@@ -205,7 +205,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Serum",
   },
 
@@ -218,7 +218,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Mask",
   },
 
@@ -231,7 +231,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Cleanser",
   },
 
@@ -244,7 +244,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "LipCare",
   },
 
@@ -257,7 +257,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Moisturizer",
   },
 
@@ -270,7 +270,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Serum",
   },
 
@@ -283,7 +283,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Cleanser",
   },
 
@@ -296,7 +296,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Cleanser",
   },
 
@@ -309,7 +309,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "EyeCare",
   },
 
@@ -322,7 +322,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Moisturizer",
   },
 
@@ -335,7 +335,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Mask",
   },
 
@@ -348,7 +348,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "EyeCare",
   },
 
@@ -361,7 +361,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Serum",
   },
 
@@ -374,7 +374,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Skin",
+    category: "SKINCARE",
     SubCategory: "Serum",
   },
 
@@ -387,7 +387,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Lips",
   },
 
@@ -400,7 +400,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Eyes",
   },
 
@@ -413,7 +413,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Eyes",
   },
 
@@ -426,7 +426,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Tools",
   },
 
@@ -439,7 +439,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Tools",
   },
 
@@ -452,7 +452,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Eyes",
   },
 
@@ -465,7 +465,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Tools",
   },
 
@@ -478,7 +478,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Face",
   },
 
@@ -491,7 +491,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Eyes",
   },
 
@@ -504,7 +504,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Face",
   },
 
@@ -517,7 +517,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Face",
   },
 
@@ -530,7 +530,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Lips",
   },
 
@@ -543,7 +543,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Lips",
   },
 
@@ -556,7 +556,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Face",
   },
 
@@ -569,7 +569,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Lips",
   },
 
@@ -582,7 +582,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Lips",
   },
 
@@ -595,7 +595,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Makeup",
+    category: "MAKEUP",
     SubCategory: "Tools",
   },
 
@@ -608,7 +608,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Hair",
+    category: "HAIRCARE",
     SubCategory: "",
   },
 
@@ -621,7 +621,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Hair",
+    category: "HAIRCARE",
     SubCategory: "",
   },
 
@@ -634,7 +634,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Hair",
+    category: "HAIRCARE",
     SubCategory: "",
   },
 
@@ -647,7 +647,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Hair",
+    category: "HAIRCARE",
     SubCategory: "",
   },
 
@@ -660,7 +660,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Hair",
+    category: "HAIRCARE",
     SubCategory: "",
   },
 
@@ -673,7 +673,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Hair",
+    category: "HAIRCARE",
     SubCategory: "",
   },
 
@@ -686,7 +686,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "Hair",
+    category: "HAIRCARE",
     SubCategory: "",
   },
 
@@ -699,7 +699,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "BabyCare",
+    category: "BABYCARECare",
     SubCategory: "",
   },
 
@@ -712,7 +712,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "BabyCare",
+    category: "BABYCARECare",
     SubCategory: "",
   },
 
@@ -725,7 +725,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "BabyCare",
+    category: "BABYCARECare",
     SubCategory: "",
   },
 
@@ -738,7 +738,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "BabyCare",
+    category: "BABYCARECare",
     SubCategory: "",
   },
 ];

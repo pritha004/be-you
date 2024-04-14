@@ -6,6 +6,6 @@ export interface Product {
   price: number;
   rating: number;
   reviewsNum: number;
-  category: string;
+  category: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE";
   SubCategory: string;
 }
