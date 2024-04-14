@@ -28,6 +28,14 @@ const router = createBrowserRouter([
         element: <AllProducts type="SKINCARE" />,
       },
       {
+        path: "/babycare",
+        element: <AllProducts type="BABYCARE" />,
+      },
+      {
+        path: "/haircare",
+        element: <AllProducts type="HAIRCARE" />,
+      },
+      {
         path: "/contact",
         element: <Landing />,
       },

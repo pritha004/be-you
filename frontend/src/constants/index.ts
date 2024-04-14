@@ -13,7 +13,7 @@ export const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-export const newLaunchProducts:Product[] = [
+export const newLaunchProducts: Product[] = [
   {
     id: 1,
     imgURL:
@@ -116,8 +116,8 @@ export const footerLinks = [
       { name: "Skincare", link: "/skincare" },
       { name: "Bodycare", link: "/" },
       { name: "Makeup", link: "/makeup" },
-      { name: "Haircare", link: "/" },
-      { name: "Babycare", link: "/" },
+      { name: "Haircare", link: "/haircare" },
+      { name: "Babycare", link: "/babycare" },
     ],
   },
   {
@@ -145,7 +145,7 @@ export const socialMedia = [
   { logo: AiFillInstagram, alt: "instagram logo" },
 ];
 
-export const minimalMakeupProducts:Product[] = [
+export const minimalMakeupProducts: Product[] = [
   {
     id: 1,
     imgURL:
@@ -196,7 +196,14 @@ export const minimalMakeupProducts:Product[] = [
   },
 ];
 
-export const allProducts:Product[] = [
+export const subCategoriesMapping = {
+  SKINCARE: ["Cleanser", "Mask", "Moisturizer", "LipCare", "Serum", "EyeCare"],
+  MAKEUP: ["Eyes", "Lips", "Tools", "Face"],
+  HAIRCARE:[],
+  BABYCARE:[]
+};
+
+export const allProducts: Product[] = [
   {
     id: 1,
     imgURL:

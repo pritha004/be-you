@@ -3,11 +3,13 @@ import ProductCard from "./ProductCard";
 import Button from "./Button";
 import ReviewCard from "./ReviewCard";
 import ShopByConcernCategoryCard from "./ShopByConcernCategoryCard";
+import Select from "./Select";
 
 export {
     Nav,
     ProductCard,
     Button,
     ReviewCard,
-    ShopByConcernCategoryCard
+    ShopByConcernCategoryCard,
+    Select
 }
