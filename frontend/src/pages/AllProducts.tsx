@@ -4,7 +4,7 @@ import { Product } from "../models/Product";
 import { useEffect, useState } from "react";
 
 type Props = {
-  type?: string;
+  type?: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE";
 };
 
 const AllProducts = ({ type }: Props) => {
@@ -12,7 +12,7 @@ const AllProducts = ({ type }: Props) => {
 
   useEffect(() => {
     const filterProducts = allProducts.filter(
-      (product) => product.category.toLowerCase() === type
+      (product) => product.category === type
     );
     if (filterProducts) {
       setProducts(filterProducts);

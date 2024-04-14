@@ -1,6 +1,7 @@
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
+import { Product } from "../models/Product";
 
 export const heroImage =
   "https://images.unsplash.com/photo-1495707800306-e240c5a0d65f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -12,7 +13,7 @@ export const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-export const newLaunchProducts = [
+export const newLaunchProducts:Product[] = [
   {
     id: 1,
     imgURL:
@@ -144,7 +145,7 @@ export const socialMedia = [
   { logo: AiFillInstagram, alt: "instagram logo" },
 ];
 
-export const minimalMakeupProducts = [
+export const minimalMakeupProducts:Product[] = [
   {
     id: 1,
     imgURL:
@@ -195,7 +196,7 @@ export const minimalMakeupProducts = [
   },
 ];
 
-export const allProducts = [
+export const allProducts:Product[] = [
   {
     id: 1,
     imgURL:
@@ -699,7 +700,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "BABYCARECare",
+    category: "BABYCARE",
     SubCategory: "",
   },
 
@@ -712,7 +713,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "BABYCARECare",
+    category: "BABYCARE",
     SubCategory: "",
   },
 
@@ -725,7 +726,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "BABYCARECare",
+    category: "BABYCARE",
     SubCategory: "",
   },
 
@@ -738,7 +739,7 @@ export const allProducts = [
     price: 0,
     rating: 0,
     reviewsNum: 0,
-    category: "BABYCARECare",
+    category: "BABYCARE",
     SubCategory: "",
   },
 ];

@@ -21,11 +21,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/makeup",
-        element: <AllProducts type="makeup"/>,
+        element: <AllProducts type="MAKEUP"/>,
       },
       {
         path: "/skincare",
-        element: <AllProducts type="skin" />,
+        element: <AllProducts type="SKINCARE" />,
       },
       {
         path: "/contact",
