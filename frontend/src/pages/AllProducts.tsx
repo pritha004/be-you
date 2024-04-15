@@ -1,4 +1,8 @@
-import { allProducts, subCategoriesMapping } from "../constants";
+import {
+  allProducts,
+  sortByCategories,
+  subCategoriesMapping,
+} from "../constants";
 import { Button, ProductCard } from "../components";
 import { Product } from "../models/Product";
 import { useEffect, useState } from "react";
@@ -51,6 +55,7 @@ const AllProducts = ({ type }: Props) => {
               {type?.slice(4)}
             </h2>
           </div>
+
           <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
             {subCategories?.map((subCategory) => (
               <Button
@@ -66,10 +71,35 @@ const AllProducts = ({ type }: Props) => {
               />
             ))}
           </div>
-          <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
-            {products?.map((product: Product) => (
-              <ProductCard key={product.id} {...product} />
-            ))}
+          <section className="grid gap-4 m-4 sm:grid-cols-12">
+            <div className="rounded sm:col-span-3">
+              <div className="p-2 rounded-md border shadow-lg">
+                <p>Sort By</p>
+                {sortByCategories?.map((category) => (
+                  <p className="whitespace-nowrap">{category}</p>
+                ))}
+              </div>
+            </div>
+            <div className="rounded sm:col-span-9">
+              <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
+                {products?.map((product: Product) => (
+                  <ProductCard key={product.id} {...product} />
+                ))}
+              </div>
+            </div>
+          </section>
+          <div className="flex sm:flex-row flex-col gap-2 justify-center">
+            {/* <div className="w-full h-1/3 rounded-md border shadow-lg m-x-2 p-4">
+              <p>Sort By</p>
+              {sortByCategories?.map((category) => (
+                <p className="whitespace-nowrap">{category}</p>
+              ))}
+            </div> */}
+            {/* <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
+              {products?.map((product: Product) => (
+                <ProductCard key={product.id} {...product} />
+              ))}
+            </div> */}
           </div>
         </section>
       </section>

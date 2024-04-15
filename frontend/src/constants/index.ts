@@ -203,6 +203,14 @@ export const subCategoriesMapping = {
   BABYCARE:[]
 };
 
+export const sortByCategories = [
+  "Name",
+  "Customer Rating",
+  "Price: High To Low",
+  "Price: Low To High"
+];
+
+
 export const allProducts: Product[] = [
   {
     id: 1,
