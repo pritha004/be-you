@@ -8,7 +8,7 @@ import { Product } from "../models/Product";
 import { useEffect, useState } from "react";
 
 type Props = {
-  type?: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE";
+  type?: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE" | "ALL PRODUCTS";
 };
 
 const AllProducts = ({ type }: Props) => {
@@ -16,14 +16,14 @@ const AllProducts = ({ type }: Props) => {
   const [subCategories, setSubCategories] = useState<string[]>();
 
   useEffect(() => {
-    if (type) {
+    if (type && type !== "ALL PRODUCTS") {
       setSubCategories(subCategoriesMapping[type]);
     }
 
     const filterProducts = allProducts.filter(
       (product) => product.category === type
     );
-    if (filterProducts) {
+    if (filterProducts && filterProducts.length > 0) {
       setProducts(filterProducts);
     } else {
       setProducts(allProducts);
@@ -37,8 +37,7 @@ const AllProducts = ({ type }: Props) => {
       (product) => product.SubCategory === subCategory
     );
 
-    if (filterProducts) {
-      console.log(filterProducts);
+    if (filterProducts && filterProducts.length > 0) {
       setProducts(filterProducts);
     } else {
       setProducts([]);
@@ -88,19 +87,6 @@ const AllProducts = ({ type }: Props) => {
               </div>
             </div>
           </section>
-          <div className="flex sm:flex-row flex-col gap-2 justify-center">
-            {/* <div className="w-full h-1/3 rounded-md border shadow-lg m-x-2 p-4">
-              <p>Sort By</p>
-              {sortByCategories?.map((category) => (
-                <p className="whitespace-nowrap">{category}</p>
-              ))}
-            </div> */}
-            {/* <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
-              {products?.map((product: Product) => (
-                <ProductCard key={product.id} {...product} />
-              ))}
-            </div> */}
-          </div>
         </section>
       </section>
     </>
