@@ -6,6 +6,8 @@ import {
 import { Button, ProductCard } from "../components";
 import { Product } from "../models/Product";
 import { useEffect, useState } from "react";
+import { FaCircleCheck } from "react-icons/fa6";
+import { FaRegCircle } from "react-icons/fa";
 
 type Props = {
   type?: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE" | "ALL PRODUCTS";
@@ -31,7 +33,6 @@ const AllProducts = ({ type }: Props) => {
   }, [type, setProducts]);
 
   const filterBySubCategory = (subCategory: string) => {
-    console.log(subCategory);
 
     const filterProducts = allProducts.filter(
       (product) => product.SubCategory === subCategory
@@ -42,6 +43,13 @@ const AllProducts = ({ type }: Props) => {
     } else {
       setProducts([]);
     }
+  };
+
+  const sortByOptions = (category: string) => {
+    //sort methods
+    //name
+    //rating
+    //price
   };
 
   return (
@@ -73,9 +81,21 @@ const AllProducts = ({ type }: Props) => {
           <section className="grid gap-4 m-4 sm:grid-cols-12">
             <div className="rounded sm:col-span-3">
               <div className="p-2 rounded-md border shadow-lg">
-                <p>Sort By</p>
+                <p className="font-semibold text-lg">Sort By</p>
                 {sortByCategories?.map((category) => (
-                  <p className="whitespace-nowrap">{category}</p>
+                  // <button
+                  //   className="whitespace-nowrap block hover:text-chocolate-brown"
+                  //   key={category}
+                  // >
+                  //   {category}
+                  // </button>
+                  <span className="flex items-center justify-between gap-1 p-1">
+                    <span>{category}</span>
+                    <button onClick={()=>sortByOptions(category)}>
+                      <FaCircleCheck className="text-chocolate-brown" />
+                      {/* <FaRegCircle /> */}
+                    </button>
+                  </span>
                 ))}
               </div>
             </div>
