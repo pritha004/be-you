@@ -20,7 +20,7 @@ export const newLaunchProducts: Product[] = [
       "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2tpbmNhcmUlMjBhbmQlMjBtYWtldXAlMjBwcm9kdWN0c3xlbnwwfDB8MHx8fDI%3D",
     name: "Organic Coconut Body Oil",
     desc: "",
-    price: 14.99,
+    price: 699,
     rating: 3.9,
     reviewsNum: 1009,
     category: "SKINCARE",
@@ -32,7 +32,7 @@ export const newLaunchProducts: Product[] = [
       "https://images.unsplash.com/photo-1591375372226-3531cf2eb6d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
     name: "Irresistible Eau De Parfum",
     desc: "",
-    price: 75.78,
+    price: 2150,
     rating: 4.5,
     reviewsNum: 1009,
     category: "SKINCARE",
@@ -44,7 +44,7 @@ export const newLaunchProducts: Product[] = [
       "https://images.unsplash.com/photo-1611080541599-8c6dbde6ed28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
     name: "Lip Sleeping Mask - Sweet Candy",
     desc: "",
-    price: 19.0,
+    price: 190,
     rating: 4.3,
     reviewsNum: 5000,
     category: "SKINCARE",
@@ -56,7 +56,7 @@ export const newLaunchProducts: Product[] = [
       "https://images.unsplash.com/photo-1564512480295-86e479d9b87c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
     name: "Jade Facial Roller for Face, Neck and Body Muscle",
     desc: "",
-    price: 80.2,
+    price: 3100,
     rating: 4.1,
     reviewsNum: 2109,
     category: "SKINCARE",
@@ -114,7 +114,6 @@ export const footerLinks = [
     title: "Shop",
     links: [
       { name: "Skincare", link: "/skincare" },
-      { name: "Bodycare", link: "/" },
       { name: "Makeup", link: "/makeup" },
       { name: "Haircare", link: "/haircare" },
       { name: "Babycare", link: "/babycare" },
@@ -197,7 +196,15 @@ export const minimalMakeupProducts: Product[] = [
 ];
 
 export const subCategoriesMapping = {
-  SKINCARE: ["Cleanser", "Mask", "Moisturizer", "LipCare", "Serum", "EyeCare"],
+  SKINCARE: [
+    "Cleanser",
+    "Mask",
+    "Moisturizer",
+    "LipCare",
+    "Serum",
+    "EyeCare",
+    "Body",
+  ],
   MAKEUP: ["Eyes", "Lips", "Tools", "Face"],
   HAIRCARE: [],
   BABYCARE: [],
@@ -345,7 +352,7 @@ export const allProducts: Product[] = [
     id: 11,
     imgURL:
       "https://images.unsplash.com/photo-1569600187472-a0d8b8cf606a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Ubtan Face Mask",
+    name: "Mugwort Face Mask",
     desc: "",
     price: 499,
     rating: 2.3,
@@ -755,5 +762,30 @@ export const allProducts: Product[] = [
     reviewsNum: 387,
     category: "BABYCARE",
     SubCategory: "",
+  },
+
+  {
+    id: 43,
+    imgURL:
+      "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2tpbmNhcmUlMjBhbmQlMjBtYWtldXAlMjBwcm9kdWN0c3xlbnwwfDB8MHx8fDI%3D",
+    name: "Organic Coconut Body Oil",
+    desc: "",
+    price: 699,
+    rating: 3.9,
+    reviewsNum: 1009,
+    category: "SKINCARE",
+    SubCategory: "Body",
+  },
+  {
+    id: 44,
+    imgURL:
+      "https://images.unsplash.com/photo-1591375372226-3531cf2eb6d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
+    name: "Irresistible Eau De Parfum",
+    desc: "",
+    price: 2150,
+    rating: 4.5,
+    reviewsNum: 1009,
+    category: "SKINCARE",
+    SubCategory: "Body",
   },
 ];

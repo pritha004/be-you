@@ -1,5 +1,6 @@
 import {
   allProducts,
+  footerLinks,
   sortByCategories,
   subCategoriesMapping,
 } from "../constants";
@@ -8,6 +9,7 @@ import { Product } from "../models/Product";
 import { useEffect, useState } from "react";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaRegCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 type Props = {
   type?: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE" | "ALL PRODUCTS";
@@ -17,7 +19,7 @@ const AllProducts = ({ type }: Props) => {
   const [products, setProducts] = useState<Product[]>();
   const [subCategories, setSubCategories] = useState<string[]>();
 
-  const [isSelectedSort,setIsSelectedSort]=useState("");
+  const [isSelectedSort, setIsSelectedSort] = useState("");
 
   useEffect(() => {
     setIsSelectedSort("");
@@ -38,7 +40,7 @@ const AllProducts = ({ type }: Props) => {
 
   const filterBySubCategory = (subCategory: string) => {
     setIsSelectedSort("");
-    
+
     const filterProducts = allProducts.filter(
       (product) => product.SubCategory === subCategory
     );
@@ -51,10 +53,9 @@ const AllProducts = ({ type }: Props) => {
   };
 
   const sortByOptions = (category: string) => {
-    if(category)
-      {
-        setIsSelectedSort(category);
-      }
+    if (category) {
+      setIsSelectedSort(category);
+    }
     if (products && products.length > 0) {
       const sortedProducts = [...products];
       if (category === "name") {
@@ -96,7 +97,7 @@ const AllProducts = ({ type }: Props) => {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
-            {subCategories?.map((subCategory) => (
+            {/* {subCategories?.map((subCategory) => (
               <Button
                 key={subCategory}
                 label={subCategory}
@@ -108,31 +109,51 @@ const AllProducts = ({ type }: Props) => {
                   filterBySubCategory(subCategory);
                 }}
               />
-            ))}
+            ))} */}
+
+            {type === "ALL PRODUCTS"
+              ? footerLinks[0].links.map((link) => (
+                  <span
+                    className={`flex justify-center items-center gap-2 px-6 py-2 border text-lg leading-none rounded-full
+                bg-white text-black border-chocolate-brown hover:bg-pale-skin    
+                `}
+                  >
+                    <Link to={link.link}>{link.name}</Link>
+                  </span>
+                ))
+              : subCategories?.map((subCategory) => (
+                  <Button
+                    key={subCategory}
+                    label={subCategory}
+                    bgColor="bg-white"
+                    textColor="text-black"
+                    borderColor="border-chocolate-brown"
+                    onHoverBg="bg-pale-skin"
+                    onClick={() => {
+                      filterBySubCategory(subCategory);
+                    }}
+                  />
+                ))}
           </div>
           <section className="grid gap-4 m-4 sm:grid-cols-12">
             <div className="rounded sm:col-span-3">
               <div className="p-2 rounded-md border shadow-lg">
                 <p className="font-semibold text-lg">Sort By</p>
                 {sortByCategories?.map((category) => (
-                  // <button
-                  //   className="whitespace-nowrap block hover:text-chocolate-brown"
-                  //   key={category}
-                  // >
-                  //   {category}
-                  // </button>
                   <span
                     className="flex items-center justify-between gap-1 p-1"
                     key={category.id}
                   >
                     <span>{category.label}</span>
-                    {
-                      isSelectedSort===category.id?<button>
-                      <FaCircleCheck className="text-chocolate-brown" />
-                    </button>:<button onClick={() => sortByOptions(category.id)}>
-                      <FaRegCircle className=" active:text-chocolate-brown" />
-                    </button>
-                    }
+                    {isSelectedSort === category.id ? (
+                      <button>
+                        <FaCircleCheck className="text-chocolate-brown" />
+                      </button>
+                    ) : (
+                      <button onClick={() => sortByOptions(category.id)}>
+                        <FaRegCircle className=" active:text-chocolate-brown" />
+                      </button>
+                    )}
                   </span>
                 ))}
               </div>
