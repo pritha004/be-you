@@ -7,7 +7,7 @@ import { Button, ProductCard } from "../components";
 import { Product } from "../models/Product";
 import { useEffect, useState } from "react";
 import { FaCircleCheck } from "react-icons/fa6";
-import { FaRegCircle } from "react-icons/fa";
+// import { FaRegCircle } from "react-icons/fa";
 
 type Props = {
   type?: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE" | "ALL PRODUCTS";
@@ -33,7 +33,6 @@ const AllProducts = ({ type }: Props) => {
   }, [type, setProducts]);
 
   const filterBySubCategory = (subCategory: string) => {
-
     const filterProducts = allProducts.filter(
       (product) => product.SubCategory === subCategory
     );
@@ -50,6 +49,34 @@ const AllProducts = ({ type }: Props) => {
     //name
     //rating
     //price
+
+    if (products && products.length > 0) {
+      const sortedProducts = [...products];
+      if (category === "name") {
+        sortedProducts.sort(function (a, b) {
+          if (a.name.toLowerCase() < b.name.toLowerCase()) {
+            return -1;
+          }
+          if (a.name > b.name) {
+            return 1;
+          }
+          return 0;
+        });
+      } else if (category === "custrating") {
+        sortedProducts.sort(function (a, b) {
+          return b.rating - a.rating;
+        });
+      } else if (category === "pricehightolow") {
+        sortedProducts.sort(function (a, b) {
+          return b.price - a.price;
+        });
+      } else if (category === "pricelowtohigh") {
+        sortedProducts.sort(function (a, b) {
+          return a.price - b.price;
+        });
+      }
+      setProducts(sortedProducts);
+    }
   };
 
   return (
@@ -89,9 +116,12 @@ const AllProducts = ({ type }: Props) => {
                   // >
                   //   {category}
                   // </button>
-                  <span className="flex items-center justify-between gap-1 p-1">
-                    <span>{category}</span>
-                    <button onClick={()=>sortByOptions(category)}>
+                  <span
+                    className="flex items-center justify-between gap-1 p-1"
+                    key={category.id}
+                  >
+                    <span>{category.label}</span>
+                    <button onClick={() => sortByOptions(category.id)}>
                       <FaCircleCheck className="text-chocolate-brown" />
                       {/* <FaRegCircle /> */}
                     </button>

@@ -164,7 +164,7 @@ export const minimalMakeupProducts: Product[] = [
       "https://images.unsplash.com/photo-1625093525885-282384697917?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1ha2V1cHxlbnwwfDB8MHx8fDI%3D",
     name: "Eyes On Me ! 4 in 1 Quad Eyeshadow Pallete",
     desc: "",
-    price: 25.5,
+    price: 250,
     rating: 3.4,
     reviewsNum: 1105,
     category: "MAKEUP",
@@ -204,10 +204,10 @@ export const subCategoriesMapping = {
 };
 
 export const sortByCategories = [
-  "Name",
-  "Customer Rating",
-  "Price: High To Low",
-  "Price: Low To High",
+  { id: "name", label: "Name" },
+  { id: "custrating", label: "Customer Rating" },
+  { id: "pricehightolow", label: "Price: High To Low" },
+  { id: "pricelowtohigh", label: "Price: Low To High" },
 ];
 
 export const allProducts: Product[] = [
@@ -503,7 +503,7 @@ export const allProducts: Product[] = [
       "https://images.unsplash.com/photo-1625093525885-282384697917?q=80&w=801&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Eyes On Me ! 4 in 1 Quad Eyeshadow Pallete",
     desc: "",
-    price: 25.5,
+    price: 250,
     rating: 3.4,
     reviewsNum: 1105,
     category: "MAKEUP",
