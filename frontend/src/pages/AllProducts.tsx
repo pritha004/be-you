@@ -7,7 +7,7 @@ import { Button, ProductCard } from "../components";
 import { Product } from "../models/Product";
 import { useEffect, useState } from "react";
 import { FaCircleCheck } from "react-icons/fa6";
-// import { FaRegCircle } from "react-icons/fa";
+import { FaRegCircle } from "react-icons/fa";
 
 type Props = {
   type?: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE" | "ALL PRODUCTS";
@@ -17,7 +17,11 @@ const AllProducts = ({ type }: Props) => {
   const [products, setProducts] = useState<Product[]>();
   const [subCategories, setSubCategories] = useState<string[]>();
 
+  const [isSelectedSort,setIsSelectedSort]=useState("");
+
   useEffect(() => {
+    setIsSelectedSort("");
+
     if (type && type !== "ALL PRODUCTS") {
       setSubCategories(subCategoriesMapping[type]);
     }
@@ -33,6 +37,8 @@ const AllProducts = ({ type }: Props) => {
   }, [type, setProducts]);
 
   const filterBySubCategory = (subCategory: string) => {
+    setIsSelectedSort("");
+    
     const filterProducts = allProducts.filter(
       (product) => product.SubCategory === subCategory
     );
@@ -45,11 +51,10 @@ const AllProducts = ({ type }: Props) => {
   };
 
   const sortByOptions = (category: string) => {
-    //sort methods
-    //name
-    //rating
-    //price
-
+    if(category)
+      {
+        setIsSelectedSort(category);
+      }
     if (products && products.length > 0) {
       const sortedProducts = [...products];
       if (category === "name") {
@@ -121,10 +126,13 @@ const AllProducts = ({ type }: Props) => {
                     key={category.id}
                   >
                     <span>{category.label}</span>
-                    <button onClick={() => sortByOptions(category.id)}>
+                    {
+                      isSelectedSort===category.id?<button>
                       <FaCircleCheck className="text-chocolate-brown" />
-                      {/* <FaRegCircle /> */}
+                    </button>:<button onClick={() => sortByOptions(category.id)}>
+                      <FaRegCircle className=" active:text-chocolate-brown" />
                     </button>
+                    }
                   </span>
                 ))}
               </div>
