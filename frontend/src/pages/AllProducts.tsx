@@ -97,19 +97,6 @@ const AllProducts = ({ type }: Props) => {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
-            {/* {subCategories?.map((subCategory) => (
-              <Button
-                key={subCategory}
-                label={subCategory}
-                bgColor="bg-white"
-                textColor="text-black"
-                borderColor="border-chocolate-brown"
-                onHoverBg="bg-pale-skin"
-                onClick={() => {
-                  filterBySubCategory(subCategory);
-                }}
-              />
-            ))} */}
 
             {type === "ALL PRODUCTS"
               ? footerLinks[0].links.map((link) => (
@@ -137,7 +124,7 @@ const AllProducts = ({ type }: Props) => {
           </div>
           <section className="grid gap-4 m-4 sm:grid-cols-12">
             <div className="rounded sm:col-span-3">
-              <div className="p-2 rounded-md border shadow-lg">
+              <div className="p-4 rounded-md border shadow-lg">
                 <p className="font-semibold text-lg">Sort By</p>
                 {sortByCategories?.map((category) => (
                   <span
