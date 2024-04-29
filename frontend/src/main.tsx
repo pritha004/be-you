@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Landing from "./pages/Landing.tsx";
 import AllProducts from "./pages/AllProducts.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
+import ProjectNature from "./pages/ProjectNature.tsx";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs/>,
+      },
+      {
+        path: "/project-nature",
+        element: <ProjectNature/>,
       },
     ],
   },

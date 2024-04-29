@@ -1,7 +1,10 @@
 import { projectNature } from "../constants";
 import { Button } from "../components";
+import { useNavigate } from "react-router-dom";
 
 const ProjectNature = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="projectNature" className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
       <div className="flex flex-1 justify-center items-center">
@@ -28,7 +31,7 @@ const ProjectNature = () => {
         For every purchase you make, we pledge to plant a tree. This is our way of giving back to nature, ensuring that with each product you buy, you’re not just receiving, but also contributing to a greener, healthier Earth. Together, let’s grow a forest of hope and sustainability.
         </p>
         <div className="flex flex-wrap gap-2 mt-8">
-          <Button label="Read more"/>
+          <Button label="Read more" onClick={()=>navigate("/project-nature")}></Button>
         </div>
       </div>
     </section>
