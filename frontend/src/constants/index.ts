@@ -90,6 +90,9 @@ export const shopByConcernCategories = [
 export const projectNature =
   "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRyZWV8ZW58MHwwfDB8fHwy";
 
+export const projectNature2 =
+  "https://images.unsplash.com/photo-1618225622203-f2f969d5d42c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
 export const reviews = [
   {
     imgURL:
