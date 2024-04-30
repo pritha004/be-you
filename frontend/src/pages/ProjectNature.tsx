@@ -10,7 +10,7 @@ const ProjectNature = () => {
             <span className="">Project</span>{" "}
             <span className="text-skin">Nature</span>
           </h2>
-          <div className="flex flex-1 justify-center items-center gap-x-8">
+          <div className="flex flex-1 justify-center items-center gap-x-8 max-lg:flex-col max-lg:gap-y-4">
             <div className="flex flex-col flex-1">
               <p className="mt-6 lg:max-w-lg text-justify">
                 At Project Nature, we believe that every action counts. Our
