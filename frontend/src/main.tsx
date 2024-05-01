@@ -7,6 +7,7 @@ import Landing from "./pages/Landing.tsx";
 import AllProducts from "./pages/AllProducts.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
 import ProjectNature from "./pages/ProjectNature.tsx";
+import Faqs from "./pages/Faqs.tsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/project-nature",
         element: <ProjectNature/>,
+      },
+      {
+        path: "/faqs",
+        element: <Faqs/>,
       },
     ],
   },
