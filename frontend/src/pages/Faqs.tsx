@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
+import { faqs } from "../constants";
 
 const Faqs = () => {
   const [selected, setSelected] = useState<number | null>(null);
@@ -21,10 +22,7 @@ const Faqs = () => {
           </h2>
           <div className="flex flex-1 justify-center items-center">
             <div className="flex flex-col flex-1">
-              {[
-                { id: 1, title: "A", content: "Lorem" },
-                { id: 2, title: "B", content: "Lorem" },
-              ].map((item) => (
+              {faqs.map((item) => (
                 <div className="accordion-item" key={item.id}>
                   <div
                     className="accordion-title flex items-center justify-between"

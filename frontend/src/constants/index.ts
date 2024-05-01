@@ -150,6 +150,20 @@ export const socialMedia = [
   { logo: AiFillInstagram, alt: "instagram logo" },
 ];
 
+export const faqs=[
+  { "id": 1, "title": "What are the core values of your skincare brand?", "content": "Our brand is built on the principles of simplicity, purity, and effectiveness. We believe in providing skincare products that are free from unnecessary additives, are gentle on the skin, and deliver visible results." },
+  { "id": 2, "title": "Are your products suitable for all skin types?", "content": "Yes, our products are formulated to be suitable for all skin types, including sensitive skin. We use high-quality, non-irritating ingredients to ensure compatibility and comfort." },
+  { "id": 3, "title": "Do you test on animals?", "content": "No, we are committed to cruelty-free practices. Our products are not tested on animals at any stage of product development." },
+  { "id": 4, "title": "How can I find out which product is right for me?", "content": "We recommend starting with our skincare quiz on our website, which will help you identify the products that best suit your skin's needs. Additionally, our customer service team is always available to provide personalized recommendations." },
+  { "id": 5, "title": "What is the shelf life of your skincare products?", "content": "Our products typically have a shelf life of 12 months after opening. We use natural preservatives to maintain product integrity and efficacy over time." },
+  { "id": 6, "title": "Can I use your products if I have acne-prone skin?", "content": "Our products are designed to be gentle and non-comedogenic, making them suitable for acne-prone skin. However, we always recommend patch testing new products if you have concerns." },
+  { "id": 7, "title": "Are your skincare products vegan?", "content": "Yes, our entire skincare line is vegan. We do not use any animal-derived ingredients in our products." },
+  { "id": 8, "title": "How sustainable is your packaging?", "content": "Sustainability is important to us. Our packaging is made from recycled materials and is fully recyclable. We encourage our customers to recycle the packaging after use." },
+  { "id": 9, "title": "Where are your products manufactured?", "content": "All of our products are proudly manufactured in facilities that adhere to the highest standards of quality and ethical practices, right here in our home country." },
+  { "id": 10, "title": "Do you offer international shipping?", "content": "Yes, we ship internationally so that everyone can enjoy our clean, minimal skincare products. Please check our shipping policy for more details." }
+]
+
+
 export const minimalMakeupProducts: Product[] = [
   {
     id: 1,
