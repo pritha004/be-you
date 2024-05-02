@@ -2,6 +2,9 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { Product } from "../models/Product";
+import { LuTruck } from "react-icons/lu";
+import { MdOutlinePrivacyTip } from "react-icons/md";
+import { LuPackageX } from "react-icons/lu";
 
 export const heroImage =
   "https://images.unsplash.com/photo-1495707800306-e240c5a0d65f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -69,25 +72,25 @@ export const shopByConcernCategories = [
     imgURL:
       "https://images.unsplash.com/photo-1500522144261-ea64433bbe27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYxfHxwb3J0cmFpdHxlbnwwfDB8MHx8fDI%3D",
     name: "Ageing",
-    concern:"skincare",
+    concern: "skincare",
   },
   {
     imgURL:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlJTIwaW1hZ2VzfGVufDB8MHwwfHx8Mg%3D%3D",
     name: "Acne & Oily skin",
-    concern:"skincare",
+    concern: "skincare",
   },
   {
     imgURL:
       "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHdvbWFufGVufDB8MHwwfHx8Mg%3D%3D",
     name: "Hairfall",
-    concern:"haircare",
+    concern: "haircare",
   },
   {
     imgURL:
       "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHBvcnRyYWl0fGVufDB8MHwwfHx8MA%3D%3D",
     name: "Pigmentation",
-    concern:"skincare",
+    concern: "skincare",
   },
 ];
 
@@ -132,7 +135,7 @@ export const footerLinks = [
       { name: "About us", link: "/" },
       { name: "FAQs", link: "/faqs" },
       { name: "How it works", link: "/" },
-      { name: "Policies", link: "/" },
+      { name: "Policies", link: "/policies" },
     ],
   },
   {
@@ -150,19 +153,92 @@ export const socialMedia = [
   { logo: AiFillInstagram, alt: "instagram logo" },
 ];
 
-export const faqs=[
-  { "id": 1, "title": "What are the core values of your skincare brand?", "content": "Our brand is built on the principles of simplicity, purity, and effectiveness. We believe in providing skincare products that are free from unnecessary additives, are gentle on the skin, and deliver visible results." },
-  { "id": 2, "title": "Are your products suitable for all skin types?", "content": "Yes, our products are formulated to be suitable for all skin types, including sensitive skin. We use high-quality, non-irritating ingredients to ensure compatibility and comfort." },
-  { "id": 3, "title": "Do you test on animals?", "content": "No, we are committed to cruelty-free practices. Our products are not tested on animals at any stage of product development." },
-  { "id": 4, "title": "How can I find out which product is right for me?", "content": "We recommend starting with our skincare quiz on our website, which will help you identify the products that best suit your skin's needs. Additionally, our customer service team is always available to provide personalized recommendations." },
-  { "id": 5, "title": "What is the shelf life of your skincare products?", "content": "Our products typically have a shelf life of 12 months after opening. We use natural preservatives to maintain product integrity and efficacy over time." },
-  { "id": 6, "title": "Can I use your products if I have acne-prone skin?", "content": "Our products are designed to be gentle and non-comedogenic, making them suitable for acne-prone skin. However, we always recommend patch testing new products if you have concerns." },
-  { "id": 7, "title": "Are your skincare products vegan?", "content": "Yes, our entire skincare line is vegan. We do not use any animal-derived ingredients in our products." },
-  { "id": 8, "title": "How sustainable is your packaging?", "content": "Sustainability is important to us. Our packaging is made from recycled materials and is fully recyclable. We encourage our customers to recycle the packaging after use." },
-  { "id": 9, "title": "Where are your products manufactured?", "content": "All of our products are proudly manufactured in facilities that adhere to the highest standards of quality and ethical practices, right here in our home country." },
-  { "id": 10, "title": "Do you offer international shipping?", "content": "Yes, we ship internationally so that everyone can enjoy our clean, minimal skincare products. Please check our shipping policy for more details." }
-]
+export const faqs = [
+  {
+    id: 1,
+    title: "What are the core values of your skincare brand?",
+    content:
+      "Our brand is built on the principles of simplicity, purity, and effectiveness. We believe in providing skincare products that are free from unnecessary additives, are gentle on the skin, and deliver visible results.",
+  },
+  {
+    id: 2,
+    title: "Are your products suitable for all skin types?",
+    content:
+      "Yes, our products are formulated to be suitable for all skin types, including sensitive skin. We use high-quality, non-irritating ingredients to ensure compatibility and comfort.",
+  },
+  {
+    id: 3,
+    title: "Do you test on animals?",
+    content:
+      "No, we are committed to cruelty-free practices. Our products are not tested on animals at any stage of product development.",
+  },
+  {
+    id: 4,
+    title: "How can I find out which product is right for me?",
+    content:
+      "We recommend starting with our skincare quiz on our website, which will help you identify the products that best suit your skin's needs. Additionally, our customer service team is always available to provide personalized recommendations.",
+  },
+  {
+    id: 5,
+    title: "What is the shelf life of your skincare products?",
+    content:
+      "Our products typically have a shelf life of 12 months after opening. We use natural preservatives to maintain product integrity and efficacy over time.",
+  },
+  {
+    id: 6,
+    title: "Can I use your products if I have acne-prone skin?",
+    content:
+      "Our products are designed to be gentle and non-comedogenic, making them suitable for acne-prone skin. However, we always recommend patch testing new products if you have concerns.",
+  },
+  {
+    id: 7,
+    title: "Are your skincare products vegan?",
+    content:
+      "Yes, our entire skincare line is vegan. We do not use any animal-derived ingredients in our products.",
+  },
+  {
+    id: 8,
+    title: "How sustainable is your packaging?",
+    content:
+      "Sustainability is important to us. Our packaging is made from recycled materials and is fully recyclable. We encourage our customers to recycle the packaging after use.",
+  },
+  {
+    id: 9,
+    title: "Where are your products manufactured?",
+    content:
+      "All of our products are proudly manufactured in facilities that adhere to the highest standards of quality and ethical practices, right here in our home country.",
+  },
+  {
+    id: 10,
+    title: "Do you offer international shipping?",
+    content:
+      "Yes, we ship internationally so that everyone can enjoy our clean, minimal skincare products. Please check our shipping policy for more details.",
+  },
+];
 
+export const policies = [
+  {
+    id: 1,
+    title: "Shipping",
+    logo: LuTruck,
+    content:
+      "Orders are processed within 1-2 business days and shipped via standard ground shipping. Expected delivery is within 3-5 business days after processing. We offer expedited shipping options at an additional cost. Please select your preferred shipping method at checkout. Currently, we ship to select international destinations. Shipping costs and delivery time  vary based on location. Once your order is shipped, you will receive a tracking number via email to monitor your package’s progress. We provide free standard shipping on orders over a certain value. This threshold may change due to promotional events.",
+  },
+  {
+    id: 2,
+    title: "Privacy",
+    logo: MdOutlinePrivacyTip ,
+    content:
+      "We collect personal information such as name, address, and contact details to process orders. Payment information is handled securely and not stored on our servers. We are committed to protecting your privacy and implement robust security measures to safeguard your data. We do not sell or share your personal information with third parties for marketing purposes without your explicit consent. You have the right to access, correct, or delete your personal information at any time. Please contact our customer service for assistance.",
+  },
+  {
+    id: 3,
+    title: "Cancellation ",
+    logo: LuPackageX ,
+    content:
+      "Orders can be cancelled within 24 hours of placement without any penalty. If you wish to cancel an order after the 24-hour window, please contact customer service as soon as possible. If the order has not been shipped, we will attempt to process the cancellation. Refunds for cancelled orders will be processed to the original payment method within 7-10 business days. Custom or personalized orders cannot be cancelled once production has begun. For any issues or questions regarding cancellations, please reach out to our customer service team for prompt assistance.",
+  },
+];
 
 export const minimalMakeupProducts: Product[] = [
   {

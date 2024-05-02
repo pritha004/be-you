@@ -8,6 +8,7 @@ import AllProducts from "./pages/AllProducts.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
 import ProjectNature from "./pages/ProjectNature.tsx";
 import Faqs from "./pages/Faqs.tsx";
+import Policies from "./pages/Policies.tsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/faqs",
         element: <Faqs/>,
+      },
+      {
+        path: "/policies",
+        element: <Policies/>,
       },
     ],
   },
