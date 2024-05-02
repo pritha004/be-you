@@ -13,34 +13,43 @@ const Faqs = () => {
     setSelected(id);
   };
   return (
-    <section className="sm:px-16 px-8 sm:py-24 py-28">
-      <section id="project-nature" className="flex max-container">
-        <div className="flex flex-col gap-5 mb-4">
+    <section className=" sm:px-16 px-8 sm:py-24 py-28">
+      <section id="newProducts" className="max-container">
+        <div className="flex justify-center gap-5 mb-4">
           <h2 className="text-4xl font-bold font-palanquin capitalize">
             <span className="">Frequently Asked</span>{" "}
             <span className="text-skin">Questions</span>
           </h2>
-          <div className="flex flex-1 justify-center items-center">
-            <div className="flex flex-col flex-1">
+        </div>
+
+        <section className="grid w-full">
+          <div className="flex justify-center items-center">
+            <div className="flex flex-col flex-1 gap-y-4">
               {faqs.map((item) => (
                 <div className="accordion-item" key={item.id}>
                   <div
-                    className="accordion-title flex items-center justify-between"
+                    className="accordion-title flex items-center justify-between border-b cursor-pointer"
                     onClick={() => toggle(item.id)}
                   >
-                    <div>{item.title}</div>
+                    <div className="text-lg font-semibold py-4">
+                      {item.title}
+                    </div>
                     <div>
-                      {selected===item.id ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                      {selected === item.id ? (
+                        <IoIosArrowUp />
+                      ) : (
+                        <IoIosArrowDown />
+                      )}
                     </div>
                   </div>
-                  {selected===item.id && (
-                    <div className="accordion-content">{item.content}</div>
+                  {selected === item.id && (
+                    <div className="accordion-content text-slate-700">{item.content}</div>
                   )}
                 </div>
               ))}
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </section>
   );
