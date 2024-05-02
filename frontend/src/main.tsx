@@ -9,6 +9,7 @@ import ContactUs from "./pages/ContactUs.tsx";
 import ProjectNature from "./pages/ProjectNature.tsx";
 import Faqs from "./pages/Faqs.tsx";
 import Policies from "./pages/Policies.tsx";
+import AboutUs from "./pages/AboutUs.tsx";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/policies",
         element: <Policies/>,
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUs/>,
       },
     ],
   },
