@@ -3,7 +3,7 @@ import { projectNature2 } from "../constants";
 
 const ProjectNature = () => {
   return (
-    <section className="sm:px-16 px-8 sm:py-24 py-28">
+    <section className="sm:px-16 px-8 sm:py-24 py-28 dark:text-white">
       <section id="project-nature" className="flex max-container">
         <div className="flex flex-col gap-5 mb-4">
           <h2 className="text-4xl font-bold font-palanquin capitalize">
