@@ -6,12 +6,12 @@ const MinimalMakeup = () => {
   return (
     <section id="newProducts" className="max-container">
       <div className="flex flex-row justify-between items-end gap-5 mb-4">
-        <h2 className="text-4xl font-bold font-palanquin">
+        <h2 className="text-4xl font-bold font-palanquin dark:text-slate-300">
           Discover <span className="text-skin">Your</span> Essence
         </h2>
         <Link
           to="/products"
-          className=" text-amber-900 font-semibold hover:text-chocolate-brown hover:underline"
+          className=" text-amber-900 dark:text-white font-semibold hover:text-chocolate-brown hover:underline"
         >
           View All
         </Link>

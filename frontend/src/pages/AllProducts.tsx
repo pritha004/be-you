@@ -87,7 +87,7 @@ const AllProducts = ({ type }: Props) => {
 
   return (
     <>
-      <section className=" sm:px-16 px-8 sm:py-24 py-28">
+      <section className=" sm:px-16 px-8 sm:py-24 py-28 dark:text-slate-300">
         <section id="newProducts" className="max-container">
           <div className="flex justify-center gap-5 mb-4">
             <h2 className="text-4xl font-bold font-palanquin capitalize">

@@ -6,7 +6,7 @@ const ProjectNature = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="projectNature" className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
+    <section id="projectNature" className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container dark:text-slate-300">
       <div className="flex flex-1 justify-center items-center">
         <img
           src={projectNature}

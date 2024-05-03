@@ -13,8 +13,8 @@ const Faqs = () => {
     setSelected(id);
   };
   return (
-    <section className=" sm:px-16 px-8 sm:py-24 py-28">
-      <section id="newProducts" className="max-container">
+    <section className=" sm:px-16 px-8 sm:py-24 py-28 dark:text-white">
+      <section id="faqs" className="max-container">
         <div className="flex justify-center gap-5 mb-4">
           <h2 className="text-4xl font-bold font-palanquin capitalize">
             <span className="">Frequently Asked</span>{" "}
@@ -43,7 +43,7 @@ const Faqs = () => {
                     </div>
                   </div>
                   {selected === item.id && (
-                    <div className="accordion-content text-slate-700">{item.content}</div>
+                    <div className="accordion-content text-slate-700 dark:text-slate-300">{item.content}</div>
                   )}
                 </div>
               ))}

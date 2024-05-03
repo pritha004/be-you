@@ -4,6 +4,7 @@ import { CiWheat } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import ThemeBtn from "./ThemeBtn";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,26 +29,31 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className="hidden max-lg:flex max-lg:justify-around max-lg:px-4 max-lg:gap-4">
-          {isOpen && (
-            <ul className="flex flex-col gap-y-2 px-2 text-right">
-              {navLinks.map((item) => (
-                <li key={item.label}>
-                  <Link to={item.href}
-                    className="font-sans leading-normal text-lg"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-
-          {isOpen ? (
-            <RxCross2 className="mt-1" onClick={handleMenu} />
-          ) : (
-            <GiHamburgerMenu onClick={handleMenu} />
-          )}
+        <div className="flex items-center">
+          <div>
+            {!isOpen && <ThemeBtn />}
+          </div>
+          <div className="hidden max-lg:flex max-lg:justify-around max-lg:px-4 max-lg:gap-4">
+            {isOpen && (
+              <ul className="flex flex-col gap-y-2 px-2 text-right">
+                {navLinks.map((item) => (
+                  <li key={item.label}>
+                    <Link
+                      to={item.href}
+                      className="font-sans leading-normal text-lg"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {isOpen ? (
+              <RxCross2 className="mt-1" onClick={handleMenu} fontSize={25}/>
+            ) : (
+              <GiHamburgerMenu onClick={handleMenu} fontSize={30}/>
+            )}
+          </div>
         </div>
       </nav>
     </header>

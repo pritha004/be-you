@@ -2,7 +2,7 @@ import { Button } from "../components";
 
 const ContactUs = () => {
   return (
-    <section className="bg-pale-skin/30 sm:px-16 px-8 sm:py-24 py-28">
+    <section className="bg-pale-skin/30 dark:dark:bg-[#0B1120] sm:px-16 px-8 sm:py-24 py-28 dark:text-slate-300">
       <section id="contactUs" className="max-container">
         <div className="flex gap-x-2 justify-around">
 

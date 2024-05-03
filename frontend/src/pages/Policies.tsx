@@ -2,7 +2,7 @@ import { policies } from "../constants";
 
 const Policies = () => {
   return (
-    <section className=" sm:px-16 px-8 sm:py-24 py-28">
+    <section className=" sm:px-16 px-8 sm:py-24 py-28 dark:text-white">
       <section id="newProducts" className="max-container">
         <div className="flex justify-center gap-5 mb-4">
           <h2 className="text-4xl font-bold font-palanquin capitalize">
@@ -21,7 +21,7 @@ const Policies = () => {
                     <h4 className="font-bold">{policy.title}</h4>
                   </div>
                   <div>
-                    <p className="text-slate-700">{policy.content}</p>
+                    <p className="text-slate-700 dark:text-slate-300">{policy.content}</p>
                   </div>
                 </div>
               ))}

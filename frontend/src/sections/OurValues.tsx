@@ -4,10 +4,10 @@ import { FaBottleDroplet } from "react-icons/fa6";
 
 const OurValues = () => {
   return (
-    <section id="ourValues" className="max-container">
+    <section id="ourValues" className="max-container dark:text-slate-300">
       <div className="flex flex-col">
-        <h2 className="text-4xl text-center font-bold font-palanquin mb-6">
-          Our <span className="text-chocolate-brown">Values</span>
+        <h2 className="text-4xl text-center font-bold font-palanquin mb-6 ">
+          Our <span className="text-chocolate-brown dark:text-chocolate-brown">Values</span>
         </h2>
       </div>
 
@@ -18,7 +18,7 @@ const OurValues = () => {
               <BsTransparency fontSize={50} />
             </div>
             <div className="flex justify-center">
-              <h3 className="m-1 text-xl text-center text-chocolate-brown leading-normal font-bold font-palanquin">
+              <h3 className="m-1 text-xl text-center text-chocolate-brown dark:text-pale-skin leading-normal font-bold font-palanquin">
                 Transparency
               </h3>
             </div>
@@ -35,7 +35,7 @@ const OurValues = () => {
               <GiTransparentTubes fontSize={50} />
             </div>
             <div className="flex justify-center">
-              <h3 className="m-1 text-xl text-center text-chocolate-brown  leading-normal font-bold font-palanquin">
+              <h3 className="m-1 text-xl text-center text-chocolate-brown dark:text-pale-skin leading-normal font-bold font-palanquin">
                 Efficacy
               </h3>
             </div>
@@ -51,7 +51,7 @@ const OurValues = () => {
               <FaBottleDroplet fontSize={50} />
             </div>
             <div className="flex justify-center">
-              <h3 className="m-1 text-xl text-center text-chocolate-brown  leading-normal font-bold font-palanquin">
+              <h3 className="m-1 text-xl text-center text-chocolate-brown dark:text-pale-skin leading-normal font-bold font-palanquin">
                 Affordable
               </h3>
             </div>

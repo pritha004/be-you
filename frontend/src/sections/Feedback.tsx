@@ -3,7 +3,7 @@ import { reviews } from "../constants";
 
 const Feedback = () => {
   return (
-    <section className="max-container">
+    <section className="max-container dark:text-slate-300">
       <h2 className="font-palanquin text-4xl text-center font-bold">
         What <span className="text-skin">Our Customers</span> Say?
       </h2>
