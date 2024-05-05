@@ -7,8 +7,8 @@ import { MdOutlinePrivacyTip } from "react-icons/md";
 import { LuPackageX } from "react-icons/lu";
 
 export const heroImage =
-  // "https://images.unsplash.com/photo-1495707800306-e240c5a0d65f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-  "https://images.unsplash.com/photo-1593526613712-7b4b9a707330?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  "https://images.unsplash.com/photo-1495707800306-e240c5a0d65f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  // "https://images.unsplash.com/photo-1593526613712-7b4b9a707330?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 export const navLinks = [
   { href: "/", label: "Home" },

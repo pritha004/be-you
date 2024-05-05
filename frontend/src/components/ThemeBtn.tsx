@@ -25,7 +25,7 @@ export default function ThemeBtn() {
       {themeMode === "dark" ? (
         <IoSunny fontSize={30} />
       ) : (
-        <IoMdMoon color="black" fontSize={30} />
+        <IoMdMoon className="text-slate-700" fontSize={30} />
       )}
     </label>
   );
