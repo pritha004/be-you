@@ -56,7 +56,7 @@ const ContactUs = () => {
           </div>
           <div className="flex items-center max-lg:hidden">
             <img
-              className={`h-[450px] ${
+              className={`h-[450px] rounded ${
                 themeMode === "dark" ? "brightness-75" : ""
               }`}
               src="https://images.unsplash.com/photo-1631730486784-5456119f69ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2tpbmNhcmUlMjBwcm9kdWN0c3xlbnwwfDF8MHx8fDI%3D"
