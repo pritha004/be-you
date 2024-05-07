@@ -4,7 +4,7 @@ import { MdCurrencyRupee } from "react-icons/md";
 
 const ProductCard = ({ imgURL, name, price, rating, reviewsNum }: Product) => {
   return (
-    <div className="flex flex-1 flex-col w-full rounded-md border max-sm:w-full shadow-lg dark:text-slate-300 dark:bg-[#0c1324] dark:border-black">
+    <div className="flex flex-1 flex-col w-full rounded-md border max-sm:w-full shadow-lg bg-white dark:text-slate-300 dark:bg-[#0c1324] dark:border-black">
       <img
         src={imgURL}
         alt={name}

@@ -5,8 +5,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import ThemeBtn from "./ThemeBtn";
+import useTheme from "../contexts/theme";
 
 const Nav = () => {
+  const { themeMode } = useTheme();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenu = () => {
@@ -14,7 +17,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="px-4 py-6 z-10 w-full text-white bg-black/50 fixed">
+    <header className={`px-4 py-6 z-10 w-full ${themeMode==="light"?"text-black bg-white/60":"text-white bg-black/50"}  fixed`}>
       <nav className="flex justify-between items-center max-container">
         <Link to="/" className="flex justify-center items-center ">
           <CiWheat size={40} />
