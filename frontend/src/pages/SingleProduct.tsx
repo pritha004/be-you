@@ -14,14 +14,16 @@ const SingleProduct = () => {
     setProduct(foundProduct);
   }, [id]);
   return (
-    <section className=" sm:px-16 px-8 sm:py-24 py-28 dark:text-slate-300">
-      <section id="newProducts" className="max-container">
+    <section className=" sm:px-16 px-8 sm:py-24 py-28 dark:text-white">
+      <section id="product" className="max-container">
         <div className="mb-4">
-          <h2 className="text-4xl font-bold font-palanquin capitalize my-4">
-            <span className=""></span> <span className="text-skin">{id}</span>{" "}
-          </h2>
-          {product?.name}
-          {product?.price}
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <img src={product?.imgURL} />
+            <div className="">
+              <h2 className="text-justify font-bold capitalize text-4xl">{product?.name}</h2>
+              <p>{product?.desc}</p>
+            </div>
+          </div>
         </div>
       </section>
     </section>

@@ -6,7 +6,7 @@ const ShopByConcern = () => {
   return (
     <section id="shopByConcern" className="max-container">
       <div className="flex flex-col justify-center gap-5 mb-4">
-        <h2 className="text-4xl font-bold font-palanquin dark:text-slate-300">
+        <h2 className="text-4xl font-bold font-palanquin dark:text-white">
           Shop By <span className="text-chocolate-brown">Concern</span>
         </h2>
       </div>

@@ -43,7 +43,7 @@ const Faqs = () => {
                     </div>
                   </div>
                   {selected === item.id && (
-                    <div className="accordion-content text-slate-700 dark:text-slate-300">{item.content}</div>
+                    <div className="accordion-content text-slate-700 dark:text-white">{item.content}</div>
                   )}
                 </div>
               ))}

@@ -5,7 +5,7 @@ interface Props {
 
 const ShopByConcernCategoryCard = ({ imgURL, name }:Props) => {
   return (
-    <div className="flex flex-1 flex-col w-full rounded-md max-sm:w-full dark:text-slate-300">
+    <div className="flex flex-1 flex-col w-full rounded-md max-sm:w-full dark:text-white">
       <div className="flex justify-center mt-2">
         <img
           src={imgURL}

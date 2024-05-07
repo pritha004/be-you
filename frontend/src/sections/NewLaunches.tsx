@@ -6,7 +6,7 @@ const NewLaunches = () => {
   return (
     <section id="newProducts" className="max-container">
       <div className="flex flex-row justify-between items-end gap-5 mb-4">
-        <h2 className="text-4xl font-bold font-palanquin dark:text-slate-300">
+        <h2 className="text-4xl font-bold font-palanquin dark:text-white">
           <span className="text-skin">New</span> Launches
         </h2>
         <Link

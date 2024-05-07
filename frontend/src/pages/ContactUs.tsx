@@ -4,7 +4,7 @@ import useTheme from "../contexts/theme";
 const ContactUs = () => {
   const { themeMode } = useTheme();
   return (
-    <section className="bg-pale-skin/30 dark:dark:bg-[#0B1120] sm:px-16 px-8 sm:py-24 py-28 dark:text-slate-300">
+    <section className="bg-pale-skin/30 dark:dark:bg-[#0B1120] sm:px-16 px-8 sm:py-24 py-28 dark:text-white">
       <section id="contactUs" className="max-container">
         <div className="flex gap-x-2 justify-around">
           <div className="flex flex-col gap-5 mb-4">
