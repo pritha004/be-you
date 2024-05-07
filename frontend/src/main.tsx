@@ -10,6 +10,7 @@ import ProjectNature from "./pages/ProjectNature.tsx";
 import Faqs from "./pages/Faqs.tsx";
 import Policies from "./pages/Policies.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
+import SingleProduct from "./pages/SingleProduct.tsx";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,12 @@ const router = createBrowserRouter([
         element: <AllProducts type="ALL PRODUCTS" />,
       },
       {
+        path: "/products/:id",
+        element: <SingleProduct />,
+      },
+      {
         path: "/makeup",
-        element: <AllProducts type="MAKEUP"/>,
+        element: <AllProducts type="MAKEUP" />,
       },
       {
         path: "/skincare",
@@ -42,23 +47,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <ContactUs/>,
+        element: <ContactUs />,
       },
       {
         path: "/project-nature",
-        element: <ProjectNature/>,
+        element: <ProjectNature />,
       },
       {
         path: "/faqs",
-        element: <Faqs/>,
+        element: <Faqs />,
       },
       {
         path: "/policies",
-        element: <Policies/>,
+        element: <Policies />,
       },
       {
         path: "/aboutus",
-        element: <AboutUs/>,
+        element: <AboutUs />,
       },
     ],
   },

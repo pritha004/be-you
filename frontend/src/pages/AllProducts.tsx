@@ -97,7 +97,6 @@ const AllProducts = ({ type }: Props) => {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
-
             {type === "ALL PRODUCTS"
               ? footerLinks[0].links.map((link) => (
                   <span
@@ -148,7 +147,9 @@ const AllProducts = ({ type }: Props) => {
             <div className="rounded sm:col-span-9">
               <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
                 {products?.map((product: Product) => (
-                  <ProductCard key={product.id} {...product} />
+                  <Link to={`/products/${product.id}`}>
+                    <ProductCard key={product.id} {...product} />
+                  </Link>
                 ))}
               </div>
             </div>
