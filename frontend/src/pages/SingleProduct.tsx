@@ -24,7 +24,7 @@ const SingleProduct = () => {
           <div className="grid grid-cols-2 gap-12 my-4 max-xl:grid-cols-1">
             <img src={product?.imgURL} className="rounded" />
             <div className="">
-              <h2 className="text-justify font-bold capitalize text-4xl my-6 text-skin">
+              <h2 className="text-pretty font-bold capitalize text-4xl my-6 text-skin">
                 {product?.name}
               </h2>
               <p className="my-4">{product?.desc}</p>
@@ -42,7 +42,7 @@ const SingleProduct = () => {
                 </span>
               </p>
               <div className="flex flex-wrap gap-2 mt-8 w-full">
-                <Button label="ADD TO CART" borderColor="border-chocolate-brown"></Button>
+                <Button label="ADD TO CART" borderColor="border-chocolate-brown" width="w-full"></Button>
               </div>
             </div>
           </div>

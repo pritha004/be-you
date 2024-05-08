@@ -5,6 +5,7 @@ interface Props {
   textColor?: string;
   onHoverText?: string;
   borderColor?: string;
+  width?: string;
   onClick?: () => void;
 }
 
@@ -15,11 +16,12 @@ const Button = ({
   borderColor,
   onHoverBg,
   onHoverText,
+  width,
   ...props
 }: Props) => {
   return (
     <button
-      className={`flex justify-center items-center gap-2 px-6 py-2 border text-lg leading-none rounded-full
+      className={`flex justify-center items-center gap-2 px-6 py-2 border text-lg leading-none rounded-full ${width}
       ${
         bgColor
           ? `${bgColor} ${textColor} ${borderColor} hover:${onHoverBg} hover:${onHoverText}`
