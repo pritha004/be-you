@@ -1,7 +1,4 @@
-import useTheme from "../contexts/theme";
-
 const AboutUs = () => {
-  const { themeMode } = useTheme();
   return (
     <section className=" sm:px-16 px-8 sm:py-24 py-28 dark:text-white">
       <section id="aboutUs" className="max-container">
@@ -19,7 +16,7 @@ const AboutUs = () => {
         <section className="grid w-full">
           <div className="flex justify-center items-center">
             <div className="flex flex-col flex-1 gap-y-8">
-              <div className="grid grid-cols-2 gap-4 my-4">
+              <div className="grid grid-cols-2 max-xl:grid-cols-1 gap-4 my-4">
                 <p className="my-4 text-justify">
                   Our philosophy is simple:{" "}
                   <span className="font-bold">less is more</span>. In a world
@@ -59,17 +56,13 @@ const AboutUs = () => {
                   feeling heavy or overdone.
                 </p>
                 <img
-                  className={`rounded ${
-                    themeMode === "dark" ? "brightness-75" : ""
-                  }`}
+                  className={`rounded dark:brightness-75 max-xl:order-first`}
                   src="https://images.unsplash.com/photo-1620987278429-ab178d6eb547?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4 my-4">
+              <div className="grid grid-cols-2 max-xl:grid-cols-1 gap-4 my-4">
                 <img
-                  className={`rounded ${
-                    themeMode === "dark" ? "brightness-75" : ""
-                  }`}
+                  className={`rounded dark:brightness-75`}
                   src="https://images.unsplash.com/photo-1653784097013-786a8965ea3b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
                 <p className=" text-justify">
