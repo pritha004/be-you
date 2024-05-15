@@ -11,6 +11,8 @@ const SingleProduct = () => {
   const { id } = useParams();
   const [product, setProduct] = useState<Product>();
 
+  const [quantity, setQuantity] = useState(1);
+
   useEffect(() => {
     const foundProduct = allProducts.find(
       (product) => product.id === Number(id)
@@ -36,13 +38,25 @@ const SingleProduct = () => {
               <p className="my-4 flex items-center font-semibold text-center font-montserrat leading-normal ">
                 Quantity: &nbsp;&nbsp;
                 <span className="flex items-center gap-6">
-                  <IoIosRemoveCircle fontSize={30} />
-                  1
-                  <IoIosAddCircle fontSize={30} />
+                  <button
+                    onClick={() =>
+                      quantity > 1 ? setQuantity(quantity - 1) : setQuantity(1)
+                    }
+                  >
+                    <IoIosRemoveCircle fontSize={30} />
+                  </button>
+                  {quantity}
+                  <button onClick={() => setQuantity(quantity + 1)}>
+                    <IoIosAddCircle fontSize={30} />
+                  </button>
                 </span>
               </p>
               <div className="flex flex-wrap gap-2 mt-8 w-full">
-                <Button label="ADD TO CART" borderColor="border-chocolate-brown" width="w-full"></Button>
+                <Button
+                  label="ADD TO CART"
+                  borderColor="border-chocolate-brown"
+                  width="w-full"
+                ></Button>
               </div>
             </div>
           </div>
