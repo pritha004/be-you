@@ -4,12 +4,14 @@ import Button from "./Button";
 import ReviewCard from "./ReviewCard";
 import ShopByConcernCategoryCard from "./ShopByConcernCategoryCard";
 import Select from "./Select";
+import Cart from "./Cart";
 
 export {
-    Nav,
-    ProductCard,
-    Button,
-    ReviewCard,
-    ShopByConcernCategoryCard,
-    Select
-}
+  Nav,
+  ProductCard,
+  Button,
+  ReviewCard,
+  ShopByConcernCategoryCard,
+  Select,
+  Cart,
+};
