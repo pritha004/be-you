@@ -1,4 +1,5 @@
 import { CartCard } from "../components";
+import { BsFillBagHeartFill } from "react-icons/bs";
 import useCart from "../contexts/cart";
 
 const Cart = () => {
@@ -12,8 +13,21 @@ const Cart = () => {
             <span className="text-skin">Cart</span>
           </h2>
         </div>
-
-        {cart.map((product) => <CartCard {...product}/>)}
+        {cart.length > 0 ? (
+          <div>
+            {cart.map((product) => (
+              <CartCard {...product} />
+            ))}
+          </div>
+        ) : (
+          <div className="pt-4 flex flex-col items-center justify-center gap-4">
+            <BsFillBagHeartFill fontSize={200} className="dark:text-slate-200"/>
+            <div className="flex flex-col justify-center items-center">
+              <p className="font-bold text-lg">Hey, it feels so light!</p>
+              <p className="text-center italic dark:text-slate-400">There is nothing in your bag. Let's add some items.</p>
+            </div>
+          </div>
+        )}
       </section>
     </section>
   );
