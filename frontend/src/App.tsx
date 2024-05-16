@@ -37,10 +37,16 @@ export default function App() {
     setCart((prev) => [...prev, product]);
   };
 
-  const updateProductQuantity = (id: number, quantity: number) => {
+  const updateProductQuantity = (id: number, op: string) => {
     setCart((prev) =>
       prev.map((prevProduct) =>
-        prevProduct.id === id ? { ...prevProduct, quantity } : prevProduct
+        prevProduct.id === id
+          ? op === "+"
+            ? { ...prevProduct, quantity: prevProduct.quantity + 1 }
+            : op === "-"
+            ? { ...prevProduct, quantity: prevProduct.quantity - 1 }
+            : prevProduct
+          : prevProduct
       )
     );
   };

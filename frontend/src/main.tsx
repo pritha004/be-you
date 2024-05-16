@@ -11,7 +11,7 @@ import Faqs from "./pages/Faqs.tsx";
 import Policies from "./pages/Policies.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import SingleProduct from "./pages/SingleProduct.tsx";
-import { Cart } from "./components/index.ts";
+import Cart from "./pages/Cart.tsx";
 
 const router = createBrowserRouter([
   {

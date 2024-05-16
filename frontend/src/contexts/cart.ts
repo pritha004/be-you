@@ -5,7 +5,7 @@ import { CartProduct } from "../models/Product";
 export const CartContext=createContext({
     cart:[] as CartProduct[],
     addToCart:(product:CartProduct)=>{},
-    updateProductQuantity:(id:number,quantity:number)=>{},
+    updateProductQuantity:(id:number,op:string)=>{},
     removeFromCart:(id:number)=>{}
 });
 

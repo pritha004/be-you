@@ -4,7 +4,7 @@ import Button from "./Button";
 import ReviewCard from "./ReviewCard";
 import ShopByConcernCategoryCard from "./ShopByConcernCategoryCard";
 import Select from "./Select";
-import Cart from "./Cart";
+import CartCard from "./CartCard";
 
 export {
   Nav,
@@ -13,5 +13,5 @@ export {
   ReviewCard,
   ShopByConcernCategoryCard,
   Select,
-  Cart,
+  CartCard,
 };

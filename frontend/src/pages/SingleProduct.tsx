@@ -6,9 +6,12 @@ import { MdCurrencyRupee } from "react-icons/md";
 import { IoIosAddCircle } from "react-icons/io";
 import { IoIosRemoveCircle } from "react-icons/io";
 import { Button } from "../components";
+import useCart from "../contexts/cart";
 
 const SingleProduct = () => {
   const { id } = useParams();
+  const { addToCart } = useCart();
+
   const [product, setProduct] = useState<Product>();
 
   const [quantity, setQuantity] = useState(1);
@@ -56,6 +59,7 @@ const SingleProduct = () => {
                   label="ADD TO CART"
                   borderColor="border-chocolate-brown"
                   width="w-full"
+                  onClick={() => product && addToCart({ ...product, quantity })}
                 ></Button>
               </div>
             </div>
