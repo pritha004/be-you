@@ -9,3 +9,7 @@ export interface Product {
   category: "MAKEUP" | "SKINCARE" | "HAIRCARE" | "BABYCARE";
   SubCategory: string;
 }
+
+export interface CartProduct extends Product{
+  quantity:number;
+}

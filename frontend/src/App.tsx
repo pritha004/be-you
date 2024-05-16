@@ -6,6 +6,8 @@ import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { ThemeProvider } from "./contexts/theme";
+import { CartProvider } from "./contexts/cart";
+import { CartProduct } from "./models/Product";
 
 function useScrollToTop() {
   const location = useLocation();
@@ -18,6 +20,7 @@ function useScrollToTop() {
 export default function App() {
   useScrollToTop();
 
+  // theme context state and methods
   const [themeMode, setThemeMode] = useState("light");
   const lightTheme = () => {
     setThemeMode("light");
@@ -25,6 +28,25 @@ export default function App() {
 
   const darkTheme = () => {
     setThemeMode("dark");
+  };
+
+  //cart context state and methods
+  const [cart, setCart] = useState<CartProduct[]>([]);
+
+  const addToCart = (product: CartProduct) => {
+    setCart((prev) => [...prev, product]);
+  };
+
+  const updateProductQuantity = (id: number, quantity: number) => {
+    setCart((prev) =>
+      prev.map((prevProduct) =>
+        prevProduct.id === id ? { ...prevProduct, quantity } : prevProduct
+      )
+    );
+  };
+
+  const removeFromCart = (id: number) => {
+    setCart((prev) => prev.filter((prevProduct) => prevProduct.id !== id));
   };
 
   useEffect(() => {
@@ -37,15 +59,19 @@ export default function App() {
 
   return (
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
-      <main className="relative dark:bg-black">
-        <Nav />
-        <main>
-          <Outlet />
+      <CartProvider
+        value={{ cart, addToCart, updateProductQuantity, removeFromCart }}
+      >
+        <main className="relative dark:bg-black">
+          <Nav />
+          <main>
+            <Outlet />
+          </main>
+          <section className="bg-stone-800 dark:bg-[#0B1120] text-white px-8 p-8">
+            <Footer />
+          </section>
         </main>
-        <section className="bg-stone-800 dark:bg-[#0B1120] text-white px-8 p-8">
-          <Footer />
-        </section>
-      </main>
+      </CartProvider>
     </ThemeProvider>
   );
 }
