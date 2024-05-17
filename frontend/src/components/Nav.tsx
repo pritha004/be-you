@@ -7,9 +7,12 @@ import { Link } from "react-router-dom";
 import ThemeBtn from "./ThemeBtn";
 import useTheme from "../contexts/theme";
 import { FaShoppingCart } from "react-icons/fa";
+import Badge from "./Badge";
+import useCart from "../contexts/cart";
 
 const Nav = () => {
   const { themeMode } = useTheme();
+  const {cart}=useCart();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -47,11 +50,13 @@ const Nav = () => {
             {!isOpen && (
               <>
                 <ThemeBtn />
-                <Link to="/cart">
+                <Link to="/cart" className="relative">
                   <FaShoppingCart
-                    className="text-slate-700 dark:text-white"
+                    className=" text-slate-700 dark:text-white"
                     fontSize={30}
-                  />
+                  />  
+                  {cart.length>0 && <Badge label={cart.length} />}
+                    
                 </Link>
               </>
             )}

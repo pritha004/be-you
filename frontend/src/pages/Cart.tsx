@@ -21,7 +21,7 @@ const Cart = () => {
           </div>
         ) : (
           <div className="pt-4 flex flex-col items-center justify-center gap-4">
-            <BsFillBagHeartFill fontSize={200} className="dark:text-slate-200"/>
+            <BsFillBagHeartFill fontSize={200} className="text-rose-400/80"/>
             <div className="flex flex-col justify-center items-center">
               <p className="font-bold text-lg">Hey, it feels so light!</p>
               <p className="text-center italic dark:text-slate-400">There is nothing in your bag. Let's add some items.</p>
