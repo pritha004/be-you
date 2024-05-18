@@ -20,7 +20,7 @@ const notifyAddedToCart = () => {
 
 const SingleProduct = () => {
   const { id } = useParams();
-  const { addToCart } = useCart();
+  const { cart, addToCart } = useCart();
 
   const [product, setProduct] = useState<Product>();
 
@@ -70,8 +70,20 @@ const SingleProduct = () => {
                   borderColor="border-chocolate-brown"
                   width="w-full"
                   onClick={() => {
-                    product && addToCart({ ...product, quantity });
-                    notifyAddedToCart();
+                    if (product) {
+                      if (cart.length > 0) {
+                        const foundItem = cart.find(
+                          (item) => item.id === product.id
+                        );
+                        if (!foundItem) {
+                          addToCart({ ...product, quantity });
+                          notifyAddedToCart();
+                        }
+                      } else {
+                        addToCart({ ...product, quantity });
+                        notifyAddedToCart();
+                      }
+                    }
                   }}
                 ></Button>
               </div>
