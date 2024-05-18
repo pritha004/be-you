@@ -7,6 +7,16 @@ import { IoIosAddCircle } from "react-icons/io";
 import { IoIosRemoveCircle } from "react-icons/io";
 import { Button } from "../components";
 import useCart from "../contexts/cart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const notifyAddedToCart = () => {
+  toast.success("Added to cart!", {
+    position: "top-right",
+    theme: "colored",
+    autoClose: 2000,
+  });
+};
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -59,13 +69,17 @@ const SingleProduct = () => {
                   label="ADD TO CART"
                   borderColor="border-chocolate-brown"
                   width="w-full"
-                  onClick={() => product && addToCart({ ...product, quantity })}
+                  onClick={() => {
+                    product && addToCart({ ...product, quantity });
+                    notifyAddedToCart();
+                  }}
                 ></Button>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <ToastContainer />
     </section>
   );
 };
