@@ -103,6 +103,7 @@ const AllProducts = ({ type }: Props) => {
                     className={`flex justify-center items-center gap-2 px-6 py-2 border text-lg leading-none rounded-full
                 bg-white text-black border-chocolate-brown hover:bg-pale-skin    
                 `}
+                    key={link.name}
                   >
                     <Link to={link.link}>{link.name}</Link>
                   </span>
@@ -147,8 +148,8 @@ const AllProducts = ({ type }: Props) => {
             <div className="rounded sm:col-span-9">
               <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
                 {products?.map((product: Product) => (
-                  <Link to={`/products/${product.id}`}>
-                    <ProductCard key={product.id} {...product} />
+                  <Link to={`/products/${product.id}`} key={product.id}>
+                    <ProductCard {...product} />
                   </Link>
                 ))}
               </div>

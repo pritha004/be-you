@@ -13,8 +13,8 @@ const ShopByConcern = () => {
       <div className="">
         <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-4">
           {shopByConcernCategories.map((category) => (
-            <Link to={`/${category.concern}`}>
-              <ShopByConcernCategoryCard key={category.name} {...category} />
+            <Link to={`/${category.concern}`} key={category.name}>
+              <ShopByConcernCategoryCard {...category} />
             </Link>
           ))}
         </div>
