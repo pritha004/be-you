@@ -30,6 +30,14 @@ export default function App() {
     setThemeMode("dark");
   };
 
+  useEffect(() => {
+    const htmlElement = document.querySelector("html");
+    if (htmlElement) {
+      htmlElement.classList.remove("light", "dark");
+      htmlElement.classList.add(themeMode);
+    }
+  }, [themeMode]);
+
   //cart context state and methods
   const [cart, setCart] = useState<CartProduct[]>([]);
 
@@ -56,12 +64,17 @@ export default function App() {
   };
 
   useEffect(() => {
-    const htmlElement = document.querySelector("html");
-    if (htmlElement) {
-      htmlElement.classList.remove("light", "dark");
-      htmlElement.classList.add(themeMode);
+    const cartItem = localStorage.getItem("cart");
+    const cart = cartItem !== null ? JSON.parse(cartItem) : null;    
+
+    if (cart && cart.length > 0) {
+      setCart(cart);
     }
-  }, [themeMode]);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   return (
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
