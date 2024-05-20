@@ -18,9 +18,9 @@ const ProjectNature = () => {
                 we make with every purchase you make. Welcome to a world where
                 shopping isn’t just about receiving; it’s about giving back to
                 nature.
-                <div className="font-palanquin text-xl text-center py-4 px-2 font-semibold">
+                <span className="block font-palanquin text-xl text-center py-4 px-2 font-semibold">
                   Planting Trees, One Product at a Time
-                </div>
+                </span>
                 For every item you buy, we pledge to plant a tree. Yes, you read
                 that right! With each purchase, you’re not just adding to your
                 wardrobe or home decor; you’re contributing to a greener,
