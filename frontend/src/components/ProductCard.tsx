@@ -5,11 +5,13 @@ import { MdCurrencyRupee } from "react-icons/md";
 const ProductCard = ({ imgURL, name, price, rating, reviewsNum }: Product) => {
   return (
     <div className="flex flex-1 flex-col w-full rounded-md border max-sm:w-full shadow-lg bg-white dark:text-white dark:bg-[#0c1324] dark:border-black">
-      <img
-        src={imgURL}
-        alt={name}
-        className="h-[200px] w-full rounded-t-md object-cover"
-      />
+      <div className="relative overflow-hidden rounded-t-md">
+        <img
+          src={imgURL}
+          alt={name}
+          className="h-[200px] w-full rounded-t-md object-cover hover:brightness-75 hover:scale-125 hover:transition-all hover:duration-200 hover:delay-75"
+        />
+      </div>
       <div className="mt-8 flex justify-center gap-2.5">
         <p className="font-montserrat leading-normal">
           <span className="flex justify-center items-center gap-1">
