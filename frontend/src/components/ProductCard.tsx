@@ -9,7 +9,7 @@ const ProductCard = ({ imgURL, name, price, rating, reviewsNum }: Product) => {
         <img
           src={imgURL}
           alt={name}
-          className="h-[200px] w-full rounded-t-md object-cover hover:brightness-75 hover:scale-125 hover:transition-all hover:duration-200 hover:delay-75"
+          className="h-[200px] w-full border rounded-t-md object-cover hover:brightness-75 hover:scale-125 hover:transition-all hover:duration-200 hover:delay-75"
         />
       </div>
       <div className="mt-8 flex justify-center gap-2.5">
