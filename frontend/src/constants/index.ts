@@ -58,7 +58,7 @@ export const newLaunchProducts: Product[] = [
     id: 4,
     imgURL:
       "https://images.unsplash.com/photo-1564512480295-86e479d9b87c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHNraW5jYXJlJTIwYW5kJTIwbWFrZXVwJTIwcHJvZHVjdHN8ZW58MHwwfDB8fHwy",
-    name: "Jade Facial Roller for Face, Neck and Body Muscle",
+    name: "Jade Facial Roller",
     desc: "",
     price: 3100,
     rating: 4.1,
@@ -257,7 +257,7 @@ export const minimalMakeupProducts: Product[] = [
     id: 2,
     imgURL:
       "https://images.unsplash.com/photo-1625093525885-282384697917?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1ha2V1cHxlbnwwfDB8MHx8fDI%3D",
-    name: "Eyes On Me ! 4 in 1 Quad Eyeshadow Pallete",
+    name: "4 in 1 Quad Eyeshadow",
     desc: "",
     price: 250,
     rating: 3.4,
@@ -331,7 +331,7 @@ export const allProducts: Product[] = [
     id: 2,
     imgURL:
       "https://images.unsplash.com/photo-1626783416763-67a92e5e7266?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Anti-Acne Salicylic Green Clay Mask",
+    name: "Salicylic Green Clay Mask",
     desc: "Dive into the detoxifying benefits of green clay combined with salicylic acid. This mask targets acne, controls oil production, and unclogs pores, leaving you with a clear, matte finish. Ideal for oily and acne-prone skin types.",
     price: 550,
     rating: 4.1,
@@ -357,7 +357,7 @@ export const allProducts: Product[] = [
     id: 4,
     imgURL:
       "https://images.unsplash.com/photo-1611080541626-4ecc5ead618d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Lip Sleeping Mask - Sweet Candy",
+    name: "Lip Sleeping Mask",
     desc: "Pamper your lips overnight with this nourishing mask. Infused with hydrating ingredients, it repairs and softens lips, erasing the damage of the day. The sweet candy flavor makes it a delightful nightly ritual.",
     price: 199,
     rating: 4.3,
@@ -383,7 +383,7 @@ export const allProducts: Product[] = [
     id: 6,
     imgURL:
       "https://images.unsplash.com/photo-1612817288765-6d2b644c762e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Vitamin C + Niacinamide Serum Combo",
+    name: "Vitamin C Serum Combo",
     desc: "This dynamic serum combo harnesses the strengths of Vitamin C and niacinamide to tackle pigmentation and texture issues. It fades dark spots, reduces redness, and strengthens the skin barrier for a visibly healthier appearance.",
     price: 1299,
     rating: 3.9,
@@ -396,7 +396,7 @@ export const allProducts: Product[] = [
     id: 7,
     imgURL:
       "https://images.unsplash.com/photo-1643836361449-90d35fd14f1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Rice Water Bright Cleanser",
+    name: "Rice Water Cleanser",
     desc: "Indulge in the purifying properties of rice water with this brightening cleanser. It washes away impurities while nourishing the skin, leaving it soft, luminous, and refreshed. Perfect for starting and ending your day on a fresh note.",
     price: 849,
     rating: 4.3,
@@ -422,7 +422,7 @@ export const allProducts: Product[] = [
     id: 9,
     imgURL:
       "https://images.unsplash.com/photo-1629732047822-21d2237fe63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Coffee Undereye Cream for Dark Circles",
+    name: "Coffee Undereye Cream",
     desc: "Awaken your eyes with this caffeine-rich undereye cream. It combats dark circles, reduces puffiness, and smooths fine lines, giving you a refreshed and youthful look. Perfect for those who want to erase the signs of sleepless nights.",
     price: 349,
     rating: 3.2,
@@ -435,7 +435,7 @@ export const allProducts: Product[] = [
     id: 10,
     imgURL:
       "https://images.unsplash.com/photo-1667242003558-e42942d2b911?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Super light Gel Oil Free Moisturizer",
+    name: "Super Light Moisturizer",
     desc: "Stay hydrated without the heaviness with this oil-free gel moisturizer. Its quick-absorbing formula delivers moisture where it’s needed, balancing the skin and leaving it feeling supple and shine-free.",
     price: 475,
     rating: 4.1,
@@ -461,7 +461,7 @@ export const allProducts: Product[] = [
     id: 12,
     imgURL:
       "https://images.unsplash.com/photo-1562158438-16cec9c3c002?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Vitamin K and Retinol Under Eye Cream",
+    name: "Retinol Under Eye Cream",
     desc: "A rejuvenating under-eye cream that combines the power of Vitamin K and retinol to diminish dark circles and fine lines. It’s perfect for nightly use to restore the delicate eye area.",
     price: 499,
     rating: 4.6,
@@ -578,7 +578,7 @@ export const allProducts: Product[] = [
     id: 21,
     imgURL:
       "https://images.unsplash.com/photo-1631120234265-83988f58b8af?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Professional Beauty Blender",
+    name: "Beauty Blender",
     desc: "Achieve a flawless makeup application with this professional beauty blender. Its unique shape ensures seamless blending and contouring on all areas of the face.",
     price: 250,
     rating: 4.1,
@@ -604,7 +604,7 @@ export const allProducts: Product[] = [
     id: 23,
     imgURL:
       "https://images.unsplash.com/photo-1625093525885-282384697917?q=80&w=801&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Eyes On Me ! 4 in 1 Quad Eyeshadow Pallete",
+    name: "4 in 1 Quad Eyeshadow",
     desc: "Create endless eye looks with this versatile quad eyeshadow palette. From subtle daytime to dramatic evening looks, these richly pigmented shades blend effortlessly.",
     price: 250,
     rating: 3.4,
@@ -643,7 +643,7 @@ export const allProducts: Product[] = [
     id: 26,
     imgURL:
       "https://images.unsplash.com/photo-1631214524049-0ebbbe6d81aa?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Universal Lip Luminizer Gloss",
+    name: "Lip Luminizer Gloss",
     desc: "Illuminate your lips with this universal lip luminizer gloss. Its non-sticky formula glides on smoothly, providing a shimmering glow.",
     price: 2100,
     rating: 5,
@@ -695,7 +695,7 @@ export const allProducts: Product[] = [
     id: 30,
     imgURL:
       "https://images.unsplash.com/photo-1521837670401-2bd439d49e6d?q=80&w=970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Power Bullet Matte Lipstick",
+    name: "Bullet Matte Lipstick",
     desc: "Experience high-impact color with the power bullet matte lipstick. Its ultra-pigmented formula provides a smooth, matte finish that lasts.",
     price: 1150,
     rating: 4,
@@ -747,7 +747,7 @@ export const allProducts: Product[] = [
     id: 34,
     imgURL:
       "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Sulphate Free Hydrating Shampoo",
+    name: "Sulphate Free Shampoo",
     desc: "Cleanse your hair without stripping it of natural oils with this sulphate-free hydrating shampoo. It’s gentle on the scalp and perfect for keeping your hair moisturized and shiny.",
     price: 540,
     rating: 4.2,
@@ -786,7 +786,7 @@ export const allProducts: Product[] = [
     id: 37,
     imgURL:
       "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Bond Repair Hair Shampoo",
+    name: "Bond Repair Shampoo",
     desc: "Restore your hair’s vitality with this bond repair shampoo. It targets damaged areas, providing deep nourishment and leaving your hair strong and resilient.",
     price: 699,
     rating: 3.1,
@@ -799,7 +799,7 @@ export const allProducts: Product[] = [
     id: 38,
     imgURL:
       "https://images.unsplash.com/photo-1621277906553-047eaaef4400?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Anti Frizz Smoothing Conditioner",
+    name: "Anti Frizz Conditioner",
     desc: "Tame unruly hair with this anti-frizz smoothing conditioner. It seals the hair cuticle to lock in moisture and eliminate frizz, giving you smooth, manageable hair.",
     price: 820,
     rating: 4,
@@ -838,7 +838,7 @@ export const allProducts: Product[] = [
     id: 41,
     imgURL:
       "https://images.unsplash.com/photo-1630398777700-afb6d24a502d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Baby Daily Lotion with Shea Butter",
+    name: "Baby Daily Lotion",
     desc: "Pamper your baby’s skin with this luxurious daily lotion enriched with shea butter. It’s specially formulated to be gentle on delicate skin, providing long-lasting hydration and protection from dryness. The creamy texture absorbs quickly, leaving your baby’s skin soft, supple, and smelling sweet.",
     price: 870,
     rating: 4.4,
