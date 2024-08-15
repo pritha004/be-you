@@ -122,8 +122,8 @@ const AllProducts = ({ type }: Props) => {
                   />
                 ))}
           </div>
-          <section className="grid gap-4 m-4 sm:grid-cols-12">
-            <div className="rounded sm:col-span-3">
+          <section className="grid gap-4 m-4 md:grid-cols-12">
+            <div className="rounded md:col-span-3">
               <div className="p-4 rounded-md border shadow-lg">
                 <p className="font-semibold text-lg">Sort By</p>
                 {sortByCategories?.map((category) => (
@@ -145,8 +145,8 @@ const AllProducts = ({ type }: Props) => {
                 ))}
               </div>
             </div>
-            <div className="rounded sm:col-span-9">
-              <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
+            <div className="rounded md:col-span-9">
+              <div className="grid justify-around xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
                 {products?.map((product: Product) => (
                   <Link to={`/products/${product.id}`} key={product.id} className="flex flex-1">
                     <ProductCard {...product} />
