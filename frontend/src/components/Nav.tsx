@@ -22,7 +22,7 @@ const Nav = () => {
 
   return (
     <header
-      className={`px-4 py-6 z-10 w-full ${
+      className={`px-8 py-6 z-10 w-full ${
         themeMode === "light"
           ? "text-black bg-white/60"
           : "text-white bg-black/50"

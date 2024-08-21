@@ -3,6 +3,7 @@ import { BsFillBagHeartFill } from "react-icons/bs";
 import { MdCurrencyRupee } from "react-icons/md";
 import useCart from "../contexts/cart";
 import { CartProduct } from "../models/Product";
+import CheckoutBtn from "../components/CheckoutBtn";
 
 const Cart = () => {
   const { cart } = useCart();
@@ -31,6 +32,12 @@ const Cart = () => {
                     return a + b.price * b.quantity;
                   }, 0)}
                 </p>
+              </div>
+            </div>
+            <div className="mt-8 grid md:grid-cols-12 w-full  max-sm:w-full dark:text-white max-md:bg-white max-md:dark:bg-[#0c1324] max-md:dark:border-black">
+              <div className="flex col-span-full md:col-span-8"></div>
+                <div className="flex col-span-full md:col-span-4 justify-end items-center">
+                <CheckoutBtn products={cart}/>
               </div>
             </div>
           </div>
