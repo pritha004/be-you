@@ -1,14 +1,13 @@
-import Stripe from 'stripe';
+import Stripe from "stripe";
 
-const stripe = new Stripe(import.meta.env.VITE_STRIPE_SECRET_KEY);
-
-export default async function handler(event:any) {
-
+export default async function handler(event: any) {
   const { lineItems } = JSON.parse(event.body);
-    try {
+  try {
+    if (process.env.VITE_STRIPE_SECRET_KEY) {
+      const stripe = new Stripe(process.env.VITE_STRIPE_SECRET_KEY);
       const session = await stripe.checkout.sessions.create({
         line_items: lineItems,
-        mode: 'payment',
+        mode: "payment",
         success_url: `${import.meta.env.VITE_CLIENT_URL}/success`,
         cancel_url: `${import.meta.env.VITE_CLIENT_URL}/canceled`,
       });
@@ -17,11 +16,12 @@ export default async function handler(event:any) {
         statusCode: 200,
         body: JSON.stringify({ id: session.id }),
       };
-    } catch (error) {
-      console.error(error);
-      return {
-        statusCode: 500,
-        body: JSON.stringify({ error: 'Internal Server Error' }),
-      };
     }
-  };
+  } catch (error) {
+    console.error(error);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: "Internal Server Error" }),
+    };
+  }
+}
