@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 
 export default async function handler(event: any) {
-  const { lineItems } = JSON.parse(event.body);
+  const { lineItems } = event.body;
   try {
     if (process.env.VITE_STRIPE_SECRET_KEY) {
       const stripe = new Stripe(process.env.VITE_STRIPE_SECRET_KEY);
