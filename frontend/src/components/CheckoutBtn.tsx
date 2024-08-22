@@ -10,7 +10,7 @@ const CheckoutBtn = ({ products }:{products:CartProduct[]}) => {
   const handleCheckout = async () => {
     const lineItems = products.map((product : CartProduct) => ({
       price_data: {
-        currency: 'INR',
+        currency: 'usd',
         product_data: {
           name: product.name,
           //images: product.imgURL,
