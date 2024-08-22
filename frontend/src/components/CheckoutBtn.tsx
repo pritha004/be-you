@@ -15,7 +15,7 @@ const CheckoutBtn = ({ products }:{products:CartProduct[]}) => {
           name: product.name,
           //images: product.imgURL,
         },
-        unit_amount: product.price,
+        unit_amount: product.price*100,
       },
       quantity: product.quantity,
     }));
