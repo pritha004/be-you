@@ -38,6 +38,8 @@ const CheckoutBtn = ({ products }:{products:CartProduct[]}) => {
       ).then((response) => response.json());
 
       // Redirect to Checkout
+      console.log(session);
+      
       const result = await stripe.redirectToCheckout({
         sessionId: session.id,
       });
