@@ -10,12 +10,12 @@ const CheckoutBtn = ({ products }:{products:CartProduct[]}) => {
   const handleCheckout = async () => {
     const lineItems = products.map((product : CartProduct) => ({
       price_data: {
-        currency: 'usd',
+        currency: 'INR',
         product_data: {
           name: product.name,
-          images: [product.imgURL],
+          images: product.imgURL,
         },
-        unit_amount: product.price * 100,
+        unit_amount: product.price,
       },
       quantity: product.quantity,
     }));
