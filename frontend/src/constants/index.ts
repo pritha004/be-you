@@ -8,7 +8,7 @@ import { LuPackageX } from "react-icons/lu";
 import { heroImg, minimalP1, minimalP2, minimalP3, minimalP4, newLaunchP1, newLaunchP2, newLaunchP3, newLaunchP4, prod1, prod10, prod11, prod12, prod13, prod14, prod15, prod16, prod17, prod18, prod19, prod2, prod20, prod21, prod22, prod23, prod24, prod25, prod26, prod27, prod28, prod29, prod3, prod30, prod31, prod32, prod33, prod34, prod35, prod36, prod37, prod38, prod39, prod4, prod40, prod41, prod42, prod43, prod44, prod5, prod6, prod7, prod8, prod9, projNature1, projNature2, reviewer1, reviewer2, shopByConcern1, shopByConcern2, shopByConcern3, shopByConcern4 } from "../assets";
 
 // Local:  'http://localhost:5173';
-const YOUR_DOMAIN = import.meta.env.VITE_CLIENT_URL 
+const YOUR_DOMAIN = 'http://localhost:5173'
 
 export const heroImage = heroImg;
 
@@ -302,7 +302,7 @@ export const sortByCategories = [
 export const allProducts: Product[] = [
   {
     id: 1,
-    imgURL: `${YOUR_DOMAIN}/${prod1}`,
+    imgURL: `${YOUR_DOMAIN}${prod1}`,
     name: "The Vitamin C Serum",
     desc: "Unleash the power of Vitamin C with this serum designed to combat signs of aging and brighten your complexion. Its antioxidant properties protect against environmental stressors, while promoting collagen production for firmer, more radiant skin.",
     price: 1250,
@@ -314,7 +314,7 @@ export const allProducts: Product[] = [
 
   {
     id: 2,
-    imgURL: `${YOUR_DOMAIN}/${prod2}`,
+    imgURL: `${YOUR_DOMAIN}${prod2}`,
     name: "Salicylic Green Clay Mask",
     desc: "Dive into the detoxifying benefits of green clay combined with salicylic acid. This mask targets acne, controls oil production, and unclogs pores, leaving you with a clear, matte finish. Ideal for oily and acne-prone skin types.",
     price: 550,
@@ -326,7 +326,7 @@ export const allProducts: Product[] = [
 
   {
     id: 3,
-    imgURL: `${YOUR_DOMAIN}/${prod3}`,
+    imgURL: `${YOUR_DOMAIN}${prod3}`,
     name: "Gentle Skin Cleanser",
     desc: "Experience the soothing touch of this gentle cleanser, perfect for sensitive skin. It removes dirt and makeup without irritation, preserving the skin’s natural barrier. Enjoy clean, soft skin without any tightness or dryness.",
     price: 399,
@@ -338,7 +338,7 @@ export const allProducts: Product[] = [
 
   {
     id: 4,
-    imgURL: `${YOUR_DOMAIN}/${prod4}`,
+    imgURL: `${YOUR_DOMAIN}${prod4}`,
     name: "Lip Sleeping Mask",
     desc: "Pamper your lips overnight with this nourishing mask. Infused with hydrating ingredients, it repairs and softens lips, erasing the damage of the day. The sweet candy flavor makes it a delightful nightly ritual.",
     price: 199,
@@ -350,7 +350,7 @@ export const allProducts: Product[] = [
 
   {
     id: 5,
-    imgURL: `${YOUR_DOMAIN}/${prod5}`,
+    imgURL: `${YOUR_DOMAIN}${prod5}`,
     name: "Glycolic Bright Day Cream",
     desc: "Illuminate your day with this glycolic acid-infused cream. It gently exfoliates dead skin cells, revealing a brighter, more even-toned complexion. With daily use, it diminishes fine lines and imparts a youthful glow.",
     price: 699,
@@ -362,7 +362,7 @@ export const allProducts: Product[] = [
 
   {
     id: 6,
-    imgURL: `${YOUR_DOMAIN}/${prod6}`,
+    imgURL: `${YOUR_DOMAIN}${prod6}`,
     name: "Vitamin C Serum Combo",
     desc: "This dynamic serum combo harnesses the strengths of Vitamin C and niacinamide to tackle pigmentation and texture issues. It fades dark spots, reduces redness, and strengthens the skin barrier for a visibly healthier appearance.",
     price: 1299,
@@ -374,7 +374,7 @@ export const allProducts: Product[] = [
 
   {
     id: 7,
-    imgURL: `${YOUR_DOMAIN}/${prod7}`,
+    imgURL: `${YOUR_DOMAIN}${prod7}`,
     name: "Rice Water Cleanser",
     desc: "Indulge in the purifying properties of rice water with this brightening cleanser. It washes away impurities while nourishing the skin, leaving it soft, luminous, and refreshed. Perfect for starting and ending your day on a fresh note.",
     price: 849,
@@ -386,7 +386,7 @@ export const allProducts: Product[] = [
 
   {
     id: 8,
-    imgURL: `${YOUR_DOMAIN}/${prod8}`,
+    imgURL: `${YOUR_DOMAIN}${prod8}`,
     name: "AHA + BHA Face Wash",
     desc: "Reveal smoother, clearer skin with this exfoliating face wash. The combination of AHAs and BHAs works to dissolve dead skin cells and unclog pores, promoting a refined and blemish-free complexion.",
     price: 399,
@@ -398,7 +398,7 @@ export const allProducts: Product[] = [
 
   {
     id: 9,
-    imgURL: `${YOUR_DOMAIN}/${prod9}`,
+    imgURL: `${YOUR_DOMAIN}${prod9}`,
     name: "Coffee Undereye Cream",
     desc: "Awaken your eyes with this caffeine-rich undereye cream. It combats dark circles, reduces puffiness, and smooths fine lines, giving you a refreshed and youthful look. Perfect for those who want to erase the signs of sleepless nights.",
     price: 349,
@@ -410,7 +410,7 @@ export const allProducts: Product[] = [
 
   {
     id: 10,
-    imgURL: `${YOUR_DOMAIN}/${prod10}`,
+    imgURL: `${YOUR_DOMAIN}${prod10}`,
     name: "Super Light Moisturizer",
     desc: "Stay hydrated without the heaviness with this oil-free gel moisturizer. Its quick-absorbing formula delivers moisture where it’s needed, balancing the skin and leaving it feeling supple and shine-free.",
     price: 475,
@@ -422,7 +422,7 @@ export const allProducts: Product[] = [
 
   {
     id: 11,
-    imgURL: `${YOUR_DOMAIN}/${prod11}`,
+    imgURL: `${YOUR_DOMAIN}${prod11}`,
     name: "Mugwort Face Mask",
     desc: "This calming face mask is formulated with mugwort extract, known for its soothing properties. It’s designed to alleviate irritated skin, reduce redness, and provide a comforting sensation to stressed skin.",
     price: 499,
@@ -434,7 +434,7 @@ export const allProducts: Product[] = [
 
   {
     id: 12,
-    imgURL: `${YOUR_DOMAIN}/${prod12}`,
+    imgURL: `${YOUR_DOMAIN}${prod12}`,
     name: "Retinol Under Eye Cream",
     desc: "A rejuvenating under-eye cream that combines the power of Vitamin K and retinol to diminish dark circles and fine lines. It’s perfect for nightly use to restore the delicate eye area.",
     price: 499,
@@ -446,7 +446,7 @@ export const allProducts: Product[] = [
 
   {
     id: 13,
-    imgURL: `${YOUR_DOMAIN}/${prod13}`,
+    imgURL: `${YOUR_DOMAIN}${prod13}`,
     name: "Kojic Acid Face Serum",
     desc: "Brighten and even out your skin tone with this kojic acid serum. It targets hyperpigmentation and sun damage, leaving your skin with a luminous and more uniform complexion.",
     price: 599,
@@ -458,7 +458,7 @@ export const allProducts: Product[] = [
 
   {
     id: 14,
-    imgURL:`${YOUR_DOMAIN}/${prod14}`,
+    imgURL:`${YOUR_DOMAIN}${prod14}`,
     name: "Hyaluronic Serum",
     desc: "Hydrate your skin deeply with this hyaluronic acid serum. It attracts moisture to the skin’s surface, plumping fine lines and leaving your skin supple and moisturized.",
     price: 799,
@@ -470,7 +470,7 @@ export const allProducts: Product[] = [
 
   {
     id: 15,
-    imgURL: `${YOUR_DOMAIN}/${prod15}`,
+    imgURL: `${YOUR_DOMAIN}${prod15}`,
     name: "Lip Plumping Gloss",
     desc: "Get fuller-looking lips instantly with this lip plumping gloss. It enhances lip volume and provides a glossy shine while hydrating your lips.",
     price: 650,
@@ -482,7 +482,7 @@ export const allProducts: Product[] = [
 
   {
     id: 16,
-    imgURL: `${YOUR_DOMAIN}/${prod16}`,
+    imgURL: `${YOUR_DOMAIN}${prod16}`,
     name: "Volume Express Mascara",
     desc: "Achieve dramatic volume with this express mascara. Its formula helps to build up lash thickness without clumping, for a bold and beautiful look.",
     price: 499,
@@ -494,7 +494,7 @@ export const allProducts: Product[] = [
 
   {
     id: 17,
-    imgURL: `${YOUR_DOMAIN}/${prod17}`,
+    imgURL: `${YOUR_DOMAIN}${prod17}`,
     name: "Black Magic Pen Liner",
     desc: "Create the perfect winged eyeliner with ease using this pen liner. Its precision tip allows for a smooth application and the intense black pigment ensures lasting impact.",
     price: 399,
@@ -506,7 +506,7 @@ export const allProducts: Product[] = [
 
   {
     id: 18,
-    imgURL: `${YOUR_DOMAIN}/${prod18}`,
+    imgURL: `${YOUR_DOMAIN}${prod18}`,
     name: "Artist's Makeup Brush Set",
     desc: "This professional-grade brush set includes all the essential tools you need for a flawless makeup application. Each brush is crafted for specific makeup techniques.    ",
     price: 3790,
@@ -518,7 +518,7 @@ export const allProducts: Product[] = [
 
   {
     id: 19,
-    imgURL: `${YOUR_DOMAIN}/${prod19}`,
+    imgURL: `${YOUR_DOMAIN}${prod19}`,
     name: "Eye Brush Set",
     desc: "Enhance your eye makeup with this specialized brush set. It includes various brushes designed for precise eyeshadow application, blending, and detailing.",
     price: 599,
@@ -530,7 +530,7 @@ export const allProducts: Product[] = [
 
   {
     id: 20,
-    imgURL: `${YOUR_DOMAIN}/${prod20}`,
+    imgURL: `${YOUR_DOMAIN}${prod20}`,
     name: "Starshow Shadow Pot",
     desc: "Unleash your creativity with this highly pigmented shadow pot. The formula provides a long-lasting, shimmering finish that can be used to create a variety of eye looks.",
     price: 1050,
@@ -542,7 +542,7 @@ export const allProducts: Product[] = [
 
   {
     id: 21,
-    imgURL: `${YOUR_DOMAIN}/${prod21}`,
+    imgURL: `${YOUR_DOMAIN}${prod21}`,
     name: "Beauty Blender",
     desc: "Achieve a flawless makeup application with this professional beauty blender. Its unique shape ensures seamless blending and contouring on all areas of the face.",
     price: 250,
@@ -554,7 +554,7 @@ export const allProducts: Product[] = [
 
   {
     id: 22,
-    imgURL: `${YOUR_DOMAIN}/${prod22}`,
+    imgURL: `${YOUR_DOMAIN}${prod22}`,
     name: "Matte Powder Blush",
     desc: "Achieve a flawless makeup application with this professional beauty blender. Its unique shape ensures seamless blending and contouring on all areas of the face.",
     price: 3100,
@@ -566,7 +566,7 @@ export const allProducts: Product[] = [
 
   {
     id: 23,
-    imgURL: `${YOUR_DOMAIN}/${prod23}`,
+    imgURL: `${YOUR_DOMAIN}${prod23}`,
     name: "4 in 1 Quad Eyeshadow",
     desc: "Create endless eye looks with this versatile quad eyeshadow palette. From subtle daytime to dramatic evening looks, these richly pigmented shades blend effortlessly.",
     price: 250,
@@ -578,7 +578,7 @@ export const allProducts: Product[] = [
 
   {
     id: 24,
-    imgURL: `${YOUR_DOMAIN}/${prod24}`,
+    imgURL: `${YOUR_DOMAIN}${prod24}`,
     name: "Loose Finishing Powder",
     desc: "Set your makeup in place with this lightweight loose finishing powder. It minimizes shine and blurs imperfections for a soft-focus effect.",
     price: 799,
@@ -590,7 +590,7 @@ export const allProducts: Product[] = [
 
   {
     id: 25,
-    imgURL: `${YOUR_DOMAIN}/${prod25}`,
+    imgURL: `${YOUR_DOMAIN}${prod25}`,
     name: "Matte Compact Powder",
     desc: "Control shine and achieve a matte finish with this compact powder. Perfect for touch-ups throughout the day, it offers buildable coverage.",
     price: 285,
@@ -602,7 +602,7 @@ export const allProducts: Product[] = [
 
   {
     id: 26,
-    imgURL: `${YOUR_DOMAIN}/${prod26}`,
+    imgURL: `${YOUR_DOMAIN}${prod26}`,
     name: "Lip Luminizer Gloss",
     desc: "Illuminate your lips with this universal lip luminizer gloss. Its non-sticky formula glides on smoothly, providing a shimmering glow.",
     price: 2100,
@@ -614,7 +614,7 @@ export const allProducts: Product[] = [
 
   {
     id: 27,
-    imgURL: `${YOUR_DOMAIN}/${prod27}`,
+    imgURL: `${YOUR_DOMAIN}${prod27}`,
     name: "Creamy Matte Lipstick",
     desc: "Enjoy full coverage and a modern matte finish with this creamy matte lipstick. Its comfortable formula delivers intense color payoff in a range of stunning shades.",
     price: 329,
@@ -626,7 +626,7 @@ export const allProducts: Product[] = [
 
   {
     id: 28,
-    imgURL: `${YOUR_DOMAIN}/${prod28}`,
+    imgURL: `${YOUR_DOMAIN}${prod28}`,
     name: "Face Highlighter Pallete",
     desc: "Highlight your best features with this face highlighter palette. The blendable, luminous powders create a radiant, lit-from-within glow.",
     price: 3500,
@@ -638,7 +638,7 @@ export const allProducts: Product[] = [
 
   {
     id: 29,
-    imgURL: `${YOUR_DOMAIN}/${prod29}`,
+    imgURL: `${YOUR_DOMAIN}${prod29}`,
     name: "Matte Ink Liquid Lipstick",
     desc: "Make a statement with this matte ink liquid lipstick. The long-wearing formula offers bold color that stays put without drying out your lips.",
     price: 599,
@@ -650,7 +650,7 @@ export const allProducts: Product[] = [
 
   {
     id: 30,
-    imgURL: `${YOUR_DOMAIN}/${prod30}`,
+    imgURL: `${YOUR_DOMAIN}${prod30}`,
     name: "Bullet Matte Lipstick",
     desc: "Experience high-impact color with the power bullet matte lipstick. Its ultra-pigmented formula provides a smooth, matte finish that lasts.",
     price: 1150,
@@ -662,7 +662,7 @@ export const allProducts: Product[] = [
 
   {
     id: 31,
-    imgURL: `${YOUR_DOMAIN}/${prod31}`,
+    imgURL: `${YOUR_DOMAIN}${prod31}`,
     name: "Eyelash Curler",
     desc: "Transform your lashes with this ergonomic eyelash curler. Designed for comfort and precision, it gently lifts and curls lashes, creating a wide-eyed, enchanting look that lasts all day.",
     price: 349,
@@ -674,7 +674,7 @@ export const allProducts: Product[] = [
 
   {
     id: 32,
-    imgURL: `${YOUR_DOMAIN}/${prod32}`,
+    imgURL: `${YOUR_DOMAIN}${prod32}`,
     name: "Rosemary Hair Oil",
     desc: "Nourish your scalp and hair with this invigorating rosemary hair oil. Known for stimulating hair growth and adding shine, it’s the perfect treatment for healthier, more vibrant hair.",
     price: 322,
@@ -686,7 +686,7 @@ export const allProducts: Product[] = [
 
   {
     id: 33,
-    imgURL: `${YOUR_DOMAIN}/${prod33}`,
+    imgURL: `${YOUR_DOMAIN}${prod33}`,
     name: "Bond Repair Hair Mask",
     desc: "Revive damaged hair with this intensive bond repair hair mask. It works at the molecular level to repair broken bonds, restoring elasticity and strength to your locks.",
     price: 500,
@@ -698,7 +698,7 @@ export const allProducts: Product[] = [
 
   {
     id: 34,
-    imgURL: `${YOUR_DOMAIN}/${prod34}`,
+    imgURL: `${YOUR_DOMAIN}${prod34}`,
     name: "Sulphate Free Shampoo",
     desc: "Cleanse your hair without stripping it of natural oils with this sulphate-free hydrating shampoo. It’s gentle on the scalp and perfect for keeping your hair moisturized and shiny.",
     price: 540,
@@ -710,7 +710,7 @@ export const allProducts: Product[] = [
 
   {
     id: 35,
-    imgURL: `${YOUR_DOMAIN}/${prod35}`,
+    imgURL: `${YOUR_DOMAIN}${prod35}`,
     name: "Hair Dryer",
     desc: "Achieve salon-quality styling at home with this powerful hair dryer. With multiple heat settings and a cool shot button, it dries hair quickly while minimizing heat damage.",
     price: 1299,
@@ -722,7 +722,7 @@ export const allProducts: Product[] = [
 
   {
     id: 36,
-    imgURL: `${YOUR_DOMAIN}/${prod36}`,
+    imgURL: `${YOUR_DOMAIN}${prod36}`,
     name: "Hair Straightner",
     desc: "Get sleek, straight hair with this high-performance hair straightener. Its ceramic plates ensure even heat distribution, reducing frizz and enhancing shine.",
     price: 2300,
@@ -734,7 +734,7 @@ export const allProducts: Product[] = [
 
   {
     id: 37,
-    imgURL: `${YOUR_DOMAIN}/${prod37}`,
+    imgURL: `${YOUR_DOMAIN}${prod37}`,
     name: "Bond Repair Shampoo",
     desc: "Restore your hair’s vitality with this bond repair shampoo. It targets damaged areas, providing deep nourishment and leaving your hair strong and resilient.",
     price: 699,
@@ -746,7 +746,7 @@ export const allProducts: Product[] = [
 
   {
     id: 38,
-    imgURL: `${YOUR_DOMAIN}/${prod38}`,
+    imgURL: `${YOUR_DOMAIN}${prod38}`,
     name: "Anti Frizz Conditioner",
     desc: "Tame unruly hair with this anti-frizz smoothing conditioner. It seals the hair cuticle to lock in moisture and eliminate frizz, giving you smooth, manageable hair.",
     price: 820,
@@ -758,7 +758,7 @@ export const allProducts: Product[] = [
 
   {
     id: 39,
-    imgURL: `${YOUR_DOMAIN}/${prod39}`,
+    imgURL: `${YOUR_DOMAIN}${prod39}`,
     name: "Gentle Baby Wipes",
     desc: " Keep your baby clean and comfortable with these gentle baby wipes. Hypoallergenic and alcohol-free, they’re safe for even the most sensitive skin.",
     price: 200,
@@ -770,7 +770,7 @@ export const allProducts: Product[] = [
 
   {
     id: 40,
-    imgURL: `${YOUR_DOMAIN}/${prod40}`,
+    imgURL: `${YOUR_DOMAIN}${prod40}`,
     name: "Baby Massage Oil",
     desc: "Enhance your baby’s well-being with this soothing massage oil. Rich in nutrients and gentle on the skin, it’s perfect for nurturing and calming your little one.",
     price: 1890,
@@ -782,7 +782,7 @@ export const allProducts: Product[] = [
 
   {
     id: 41,
-    imgURL: `${YOUR_DOMAIN}/${prod41}`,
+    imgURL: `${YOUR_DOMAIN}${prod41}`,
     name: "Baby Daily Lotion",
     desc: "Pamper your baby’s skin with this luxurious daily lotion enriched with shea butter. It’s specially formulated to be gentle on delicate skin, providing long-lasting hydration and protection from dryness. The creamy texture absorbs quickly, leaving your baby’s skin soft, supple, and smelling sweet.",
     price: 870,
@@ -794,7 +794,7 @@ export const allProducts: Product[] = [
 
   {
     id: 42,
-    imgURL: `${YOUR_DOMAIN}/${prod42}`,
+    imgURL: `${YOUR_DOMAIN}${prod42}`,
     name: "Almond Oil",
     desc: "This pure almond oil is a versatile addition to your baby care routine. Rich in vitamins and antioxidants, it can be used for gentle massages, helping to soothe and nourish your baby’s skin. It’s also great for treating cradle cap and can be used by moms to hydrate their skin.",
     price: 459,
@@ -806,7 +806,7 @@ export const allProducts: Product[] = [
 
   {
     id: 43,
-    imgURL: `${YOUR_DOMAIN}/${prod43}`,
+    imgURL: `${YOUR_DOMAIN}${prod43}`,
     name: "Organic Coconut Body Oil",
     desc: "Experience the benefits of organic coconut oil for your whole body. This all-natural oil deeply moisturizes and softens the skin, leaving it with a radiant glow. Its lightweight formula is perfect for daily use and can also be applied to hair for added shine and health.",
     price: 699,
@@ -817,7 +817,7 @@ export const allProducts: Product[] = [
   },
   {
     id: 44,
-    imgURL: `${YOUR_DOMAIN}/${prod44}`,
+    imgURL: `${YOUR_DOMAIN}${prod44}`,
     name: "Irresistible Eau De Parfum",
     desc: "Elevate your presence with this irresistible eau de parfum. Its captivating fragrance is a blend of floral and musky notes, creating a sophisticated and alluring scent that lingers throughout the day. Perfect for special occasions or whenever you want to make a lasting impression.",
     price: 2150,

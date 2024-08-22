@@ -13,7 +13,7 @@ const CheckoutBtn = ({ products }:{products:CartProduct[]}) => {
         currency: 'INR',
         product_data: {
           name: product.name,
-          images: product.imgURL,
+          //images: product.imgURL,
         },
         unit_amount: product.price,
       },
