@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom';
 import { AiOutlineCheck } from "react-icons/ai";
+import { useContext, useEffect } from 'react';
+import { CartContext } from '../contexts/cart';
 
 const Success = () => {
+  const { resetCart } = useContext(CartContext);
+
+  useEffect(() => {
+    resetCart();
+  }, []);
+  
   return (
     <section className=" sm:px-16 px-8 sm:py-24 py-28 dark:text-white">
       <section id="aboutUs" className="max-container">

@@ -63,6 +63,10 @@ export default function App() {
     setCart((prev) => prev.filter((prevProduct) => prevProduct.id !== id));
   };
 
+  const resetCart=()=>{
+    setCart((prev)=>[])
+  }
+
   useEffect(() => {
     const cartItem = localStorage.getItem("cart");
     const cart = cartItem !== null ? JSON.parse(cartItem) : null;    
@@ -79,7 +83,7 @@ export default function App() {
   return (
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
       <CartProvider
-        value={{ cart, addToCart, updateProductQuantity, removeFromCart }}
+        value={{ cart, addToCart, updateProductQuantity, removeFromCart,resetCart }}
       >
         <main className="relative dark:bg-black">
           <Nav />

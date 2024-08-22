@@ -6,7 +6,8 @@ export const CartContext=createContext({
     cart:[] as CartProduct[],
     addToCart:(product:CartProduct)=>{},
     updateProductQuantity:(id:number,op:string)=>{},
-    removeFromCart:(id:number)=>{}
+    removeFromCart:(id:number)=>{},
+    resetCart:()=>{}
 });
 
 export const CartProvider=CartContext.Provider;
