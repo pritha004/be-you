@@ -8,8 +8,8 @@ export default async function handler(event: any) {
       const session = await stripe.checkout.sessions.create({
         line_items: lineItems,
         mode: "payment",
-        success_url: `${import.meta.env.VITE_CLIENT_URL}/success`,
-        cancel_url: `${import.meta.env.VITE_CLIENT_URL}/canceled`,
+        success_url: `${process.env.VITE_CLIENT_URL}/success`,
+        cancel_url: `${process.env.VITE_CLIENT_URL}/canceled`,
       });
 
       return {

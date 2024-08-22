@@ -12,6 +12,8 @@ import Policies from "./pages/Policies.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import SingleProduct from "./pages/SingleProduct.tsx";
 import Cart from "./pages/Cart.tsx";
+import Success from "./pages/Success.tsx";
+import NotFound from "./pages/NotFound.tsx";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +71,14 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/success",
+        element: <Success />,
+      },
+      {
+        path: "/*",
+        element: <NotFound />,
       },
     ],
   },
