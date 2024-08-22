@@ -2,9 +2,11 @@ import Stripe from "stripe";
 
 export default async function handler(req: any,res:any) {
   
+  const { lineItems } = req.body;
   try {
-    
-    const { lineItems } = req.body;
+    if (req.headers['content-type'] !== 'application/json') {
+      return res.status(400).json({ error: 'Invalid Content-Type' });
+    }
     
     if (!lineItems) {
       return res.status(400).json({ error: 'lineItems is required' });
@@ -23,7 +25,7 @@ export default async function handler(req: any,res:any) {
       res.status(200).json( JSON.stringify({ id: session.id }));
     }
   } catch (error) {
-    console.error(error);
+    console.error(error,lineItems);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 }
