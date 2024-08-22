@@ -10,7 +10,7 @@ const CheckoutBtn = ({ products }:{products:CartProduct[]}) => {
   const handleCheckout = async () => {
     const lineItems = products.map((product : CartProduct) => ({
       price_data: {
-        currency: 'usd',
+        currency: 'inr',
         product_data: {
           name: product.name,
           //images: product.imgURL,
@@ -38,7 +38,6 @@ const CheckoutBtn = ({ products }:{products:CartProduct[]}) => {
       ).then((response) => response.json());
 
       // Redirect to Checkout
-      console.log(session);
       
       const result = await stripe.redirectToCheckout({
         sessionId: session.id,

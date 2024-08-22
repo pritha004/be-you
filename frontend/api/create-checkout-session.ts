@@ -18,13 +18,13 @@ export default async function handler(req: any, res: any) {
         line_items: lineItems,
         mode: "payment",
         success_url: `${process.env.VITE_CLIENT_URL}/success`,
-        cancel_url: `${process.env.VITE_CLIENT_URL}/canceled`,
+        cancel_url: `${process.env.VITE_CLIENT_URL}/`,
       });
 
       res.status(200).json({ id: session.id });
     }
   } catch (error) {
-    console.error(error, lineItems);
+    console.error(error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 }
