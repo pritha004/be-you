@@ -1,9 +1,15 @@
 import Stripe from "stripe";
 
-export default async function handler(event: any) {
+export default async function handler(req: any,res:any) {
   
-  const { lineItems } = event.body;
   try {
+    
+    const { lineItems } = req.body;
+    
+    if (!lineItems) {
+      return res.status(400).json({ error: 'lineItems is required' });
+    }
+
     if (process.env.VITE_STRIPE_SECRET_KEY) {
       const stripe = new Stripe(process.env.VITE_STRIPE_SECRET_KEY);
       const session = await stripe.checkout.sessions.create({
@@ -14,16 +20,10 @@ export default async function handler(event: any) {
         cancel_url: `${process.env.VITE_CLIENT_URL}/canceled`,
       });
 
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ id: session.id }),
-      };
+      res.status(200).json( JSON.stringify({ id: session.id }));
     }
   } catch (error) {
     console.error(error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: "Internal Server Error" }),
-    };
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 }
