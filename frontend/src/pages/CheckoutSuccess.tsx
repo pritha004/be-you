@@ -6,11 +6,8 @@ import { CartContext } from '../contexts/cart';
 const Success = () => {
   const { resetCart } = useContext(CartContext);
 
-  useEffect(() => {
-    console.log("reset");
-    
+  useEffect(() => {    
     resetCart();
-
   }, []);
   
   return (

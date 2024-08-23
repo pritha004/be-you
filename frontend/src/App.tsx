@@ -64,8 +64,8 @@ export default function App() {
   };
 
   const resetCart=()=>{
+    localStorage.removeItem("cart");
     setCart([]);
-    console.log("cleared");
   }
 
   useEffect(() => {
