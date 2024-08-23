@@ -64,7 +64,8 @@ export default function App() {
   };
 
   const resetCart=()=>{
-    setCart([])
+    setCart([]);
+    console.log("cleared");
   }
 
   useEffect(() => {
