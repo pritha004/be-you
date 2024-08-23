@@ -7,6 +7,8 @@ const Success = () => {
   const { resetCart } = useContext(CartContext);
 
   useEffect(() => {
+    console.log("reset");
+    
     resetCart();
   }, []);
   
