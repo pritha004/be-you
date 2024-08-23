@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ProductCard } from "../components";
-import { newLaunchProducts } from "../constants";
+import { newLaunchProducts, allProducts } from "../constants";
 
 const NewLaunches = () => {
   return (
@@ -17,8 +17,14 @@ const NewLaunches = () => {
         </Link>
       </div>
       <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
-        {newLaunchProducts.map((product) => (
-          <ProductCard key={product.name} {...product} />
+        {[...allProducts].sort(() => 0.5 - Math.random()).slice(0,4).map((product) => (
+          <Link
+            to={`/products/${product.id}`}
+            key={product.id}
+            className="flex flex-1"
+          >
+            <ProductCard {...product} />
+          </Link>
         ))}
       </div>
     </section>

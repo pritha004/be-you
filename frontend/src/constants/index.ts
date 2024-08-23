@@ -7,8 +7,8 @@ import { MdOutlinePrivacyTip } from "react-icons/md";
 import { LuPackageX } from "react-icons/lu";
 import { heroImg, minimalP1, minimalP2, minimalP3, minimalP4, newLaunchP1, newLaunchP2, newLaunchP3, newLaunchP4, prod1, prod10, prod11, prod12, prod13, prod14, prod15, prod16, prod17, prod18, prod19, prod2, prod20, prod21, prod22, prod23, prod24, prod25, prod26, prod27, prod28, prod29, prod3, prod30, prod31, prod32, prod33, prod34, prod35, prod36, prod37, prod38, prod39, prod4, prod40, prod41, prod42, prod43, prod44, prod5, prod6, prod7, prod8, prod9, projNature1, projNature2, reviewer1, reviewer2, shopByConcern1, shopByConcern2, shopByConcern3, shopByConcern4 } from "../assets";
 
-// Local:  'http://localhost:5173';
-const CLIENT_URL = import.meta.env.VITE_CLIENT_URL;
+// TODO: Replace dev url: http://localhost:5173';
+const CLIENT_URL = 'http://localhost:5173';
 
 export const heroImage = heroImg;
 

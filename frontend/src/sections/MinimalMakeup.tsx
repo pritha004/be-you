@@ -1,5 +1,5 @@
 import { ProductCard } from "../components";
-import { minimalMakeupProducts } from "../constants";
+import { allProducts, minimalMakeupProducts } from "../constants";
 import { Link } from "react-router-dom";
 
 const MinimalMakeup = () => {
@@ -17,8 +17,14 @@ const MinimalMakeup = () => {
         </Link>
       </div>
       <div className="grid justify-around lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
-        {minimalMakeupProducts.map((product) => (
-          <ProductCard key={product.name} {...product} />
+      {allProducts.slice(18,22).map((product) => (
+          <Link
+            to={`/products/${product.id}`}
+            key={product.id}
+            className="flex flex-1"
+          >
+            <ProductCard {...product} />
+          </Link>
         ))}
       </div>
     </section>
