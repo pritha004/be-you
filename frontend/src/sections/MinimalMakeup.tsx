@@ -1,5 +1,5 @@
 import { ProductCard } from "../components";
-import { allProducts, minimalMakeupProducts } from "../constants";
+import { allProducts } from "../constants";
 import { Link } from "react-router-dom";
 
 const MinimalMakeup = () => {

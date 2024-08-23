@@ -1,10 +1,5 @@
 import heroImg from './heroImage.avif';
 
-import newLaunchP1 from './newLaunchP1.avif';
-import newLaunchP2 from './newLaunchP2.avif';
-import newLaunchP3 from './newLaunchP3.avif';
-import newLaunchP4 from './newLaunchP4.avif';
-
 import shopByConcern1 from './shopByConcern1.avif';
 import shopByConcern2 from './shopByConcern2.avif';
 import shopByConcern3 from './shopByConcern3.avif';
@@ -15,11 +10,6 @@ import projNature2 from './projectNature2.avif';
 
 import reviewer1 from './reviewer1.avif';
 import reviewer2 from './reviewer2.avif';
-
-import minimalP1 from './minimalP1.avif';
-import minimalP2 from './minimalP2.avif';
-import minimalP3 from './minimalP3.avif';
-import minimalP4 from './minimalP4.avif';
 
 import prod1 from './prod1.avif';
 import prod2 from './prod2.avif';
@@ -70,10 +60,6 @@ import prod44 from './prod44.avif';
 
 export {
     heroImg,
-    newLaunchP1,
-    newLaunchP2,
-    newLaunchP3,
-    newLaunchP4,
     shopByConcern1,
     shopByConcern2,
     shopByConcern3,
@@ -82,10 +68,6 @@ export {
     projNature2,
     reviewer1,
     reviewer2,
-    minimalP1,
-    minimalP2,
-    minimalP3,
-    minimalP4,
     prod1,
     prod2,
     prod3,

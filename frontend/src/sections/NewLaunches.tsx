@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ProductCard } from "../components";
-import { newLaunchProducts, allProducts } from "../constants";
+import { allProducts } from "../constants";
 
 const NewLaunches = () => {
   return (

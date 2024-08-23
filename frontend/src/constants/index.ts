@@ -5,7 +5,7 @@ import { Product } from "../models/Product";
 import { LuTruck } from "react-icons/lu";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 import { LuPackageX } from "react-icons/lu";
-import { heroImg, minimalP1, minimalP2, minimalP3, minimalP4, newLaunchP1, newLaunchP2, newLaunchP3, newLaunchP4, prod1, prod10, prod11, prod12, prod13, prod14, prod15, prod16, prod17, prod18, prod19, prod2, prod20, prod21, prod22, prod23, prod24, prod25, prod26, prod27, prod28, prod29, prod3, prod30, prod31, prod32, prod33, prod34, prod35, prod36, prod37, prod38, prod39, prod4, prod40, prod41, prod42, prod43, prod44, prod5, prod6, prod7, prod8, prod9, projNature1, projNature2, reviewer1, reviewer2, shopByConcern1, shopByConcern2, shopByConcern3, shopByConcern4 } from "../assets";
+import { heroImg, prod1, prod10, prod11, prod12, prod13, prod14, prod15, prod16, prod17, prod18, prod19, prod2, prod20, prod21, prod22, prod23, prod24, prod25, prod26, prod27, prod28, prod29, prod3, prod30, prod31, prod32, prod33, prod34, prod35, prod36, prod37, prod38, prod39, prod4, prod40, prod41, prod42, prod43, prod44, prod5, prod6, prod7, prod8, prod9, projNature1, projNature2, reviewer1, reviewer2, shopByConcern1, shopByConcern2, shopByConcern3, shopByConcern4 } from "../assets";
 
 // TODO: Replace dev url: http://localhost:5173';
 const CLIENT_URL = import.meta.env.VITE_CLIENT_URL;
@@ -17,53 +17,6 @@ export const navLinks = [
   { href: "/skincare", label: "Skincare" },
   { href: "/makeup", label: "Makeup" },
   { href: "/contact", label: "Contact" },
-];
-
-export const newLaunchProducts: Product[] = [
-  {
-    id: 1,
-    imgURL: newLaunchP1,
-    name: "Organic Coconut Body Oil",
-    desc: "",
-    price: 699,
-    rating: 3.9,
-    reviewsNum: 1009,
-    category: "SKINCARE",
-    SubCategory: "Body",
-  },
-  {
-    id: 2,
-    imgURL: newLaunchP2,
-    name: "Irresistible Eau De Parfum",
-    desc: "",
-    price: 2150,
-    rating: 4.5,
-    reviewsNum: 1009,
-    category: "SKINCARE",
-    SubCategory: "Body",
-  },
-  {
-    id: 3,
-    imgURL: newLaunchP3,
-    name: "Lip Sleeping Mask - Sweet Candy",
-    desc: "",
-    price: 190,
-    rating: 4.3,
-    reviewsNum: 5000,
-    category: "SKINCARE",
-    SubCategory: "Lips",
-  },
-  {
-    id: 4,
-    imgURL: newLaunchP4,
-    name: "Jade Facial Roller",
-    desc: "",
-    price: 3100,
-    rating: 4.1,
-    reviewsNum: 2109,
-    category: "SKINCARE",
-    SubCategory: "Tools",
-  },
 ];
 
 export const shopByConcernCategories = [
@@ -227,53 +180,6 @@ export const policies = [
     logo: LuPackageX,
     content:
       "Orders can be cancelled within 24 hours of placement without any penalty. If you wish to cancel an order after the 24-hour window, please contact customer service as soon as possible. If the order has not been shipped, we will attempt to process the cancellation. Refunds for cancelled orders will be processed to the original payment method within 7-10 business days. Custom or personalized orders cannot be cancelled once production has begun. For any issues or questions regarding cancellations, please reach out to our customer service team for prompt assistance.",
-  },
-];
-
-export const minimalMakeupProducts: Product[] = [
-  {
-    id: 1,
-    imgURL: minimalP1,
-    name: "Creamy Matte Lipstick",
-    desc: "",
-    price: 34.99,
-    rating: 4.3,
-    reviewsNum: 5000,
-    category: "MAKEUP",
-    SubCategory: "Lips",
-  },
-  {
-    id: 2,
-    imgURL: minimalP2,
-    name: "4 in 1 Quad Eyeshadow",
-    desc: "",
-    price: 250,
-    rating: 3.4,
-    reviewsNum: 1105,
-    category: "MAKEUP",
-    SubCategory: "Eye",
-  },
-  {
-    id: 3,
-    imgURL: minimalP3,
-    name: "Beauty Blender Sponge",
-    desc: "",
-    price: 6.0,
-    rating: 4.3,
-    reviewsNum: 300,
-    category: "MAKEUP",
-    SubCategory: "Tools",
-  },
-  {
-    id: 4,
-    imgURL: minimalP4,
-    name: "Bling it on Glitter Pallete",
-    desc: "",
-    price: 30.2,
-    rating: 3.9,
-    reviewsNum: 7109,
-    category: "MAKEUP",
-    SubCategory: "Eye",
   },
 ];
 
