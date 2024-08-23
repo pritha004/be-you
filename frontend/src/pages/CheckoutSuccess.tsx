@@ -4,12 +4,16 @@ import { useContext, useEffect } from 'react';
 import { CartContext } from '../contexts/cart';
 
 const Success = () => {
-  const { resetCart } = useContext(CartContext);
+  const { cart, removeFromCart,resetCart } = useContext(CartContext);
 
   useEffect(() => {
     console.log("reset");
     
-    resetCart();
+    //resetCart();
+    cart.map((product)=>{
+      removeFromCart(product.id)
+    })
+
   }, []);
   
   return (
