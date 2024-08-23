@@ -64,7 +64,7 @@ const SingleProduct = () => {
                   </button>
                 </span>
               </p>
-              <div className="flex flex-wrap gap-2 mt-8 w-full">
+              <div className="flex flex-wrap gap-2 mt-8 md:w-[220px]">
                 <Button
                   label="ADD TO CART"
                   borderColor="border-chocolate-brown"
