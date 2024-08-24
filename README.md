@@ -63,3 +63,5 @@ The Be U website offers the following features:
     ```bash
     npm run dev
     ```
+
+5. **Search for `TODO` in the application and make necessary changes.**
