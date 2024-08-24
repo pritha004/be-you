@@ -9,7 +9,7 @@ Be U is an online platform where users can explore and purchase a curated select
 
 Visit the live version of the Be U website today to explore our thoughtfully curated range of beauty products by clicking the link below 👇  
  
-[be-u.vercel.app](#)
+[be-u.vercel.app](https://be-u.vercel.app/)
 
 ## Technologies Used
 The Be U website is built using the following technologies:
